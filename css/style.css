@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.allContent{
+    background-color: rgb(161, 132, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+}
+
+.screen01{
+    background-color: antiquewhite;
+    background-image: url(../img/fondoSreen01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button01{
+    padding: 2%;
+    border-radius: 3em;
+}
