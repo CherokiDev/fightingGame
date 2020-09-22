@@ -108,7 +108,6 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1s;
 }
 
 .vsRow02{
@@ -290,11 +289,10 @@ html, body {
 Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
 ------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot01{
-    background-image: url(../img/sonGokuImgPlayer01Slot01.jpg);
+    background-image: url(../img/sonGokunImgPlayer01Slot01.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    transition: 1s;
 }
 
 .statsPlayer01Slot01{
@@ -309,6 +307,13 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot02
 ------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot02{
     background-image: url(../img/sonGohanImgPlayer01Slot02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.statsPlayer01Slot02{
+    background-image: url(../img/statsPlayer01Slot02.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

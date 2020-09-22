@@ -28,3 +28,22 @@ gridJugador01Casilla01.addEventListener('mouseleave', () => {
 })
 
 
+//Guardo gridPlayer01Slot02 en una constante
+const gridJugador01Casilla02 = document.getElementById('gridPlayer01Slot02');
+
+//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer01Slot01
+gridJugador01Casilla02.addEventListener('mouseenter', () => {
+    document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot02');
+    document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot02');
+})
+
+//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
+gridJugador01Casilla02.addEventListener('mouseleave', () => {
+    document.getElementById('imgPlayer01').classList.remove('imgPlayer01Slot02')
+    document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot02')
+})
+
+//TENGO QUE PROBAR SI CON EL CLICK SIGUE HACIENDO EFECTO EL MOUSEENTER
+//ANTES DE METERLE MOUSEENTER A TODAS LOS PLAYERS
+//ES DECIR, QUE AL SELECCIONAR UN PLAYER, SI PASO EL RATON POR ENCIMA DE OTRO
+//ÉSTE SIGUE RECIBIENDO LOS EFECTOS DE PASAR EL RATON POR ENCIMA
