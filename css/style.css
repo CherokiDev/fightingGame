@@ -100,7 +100,7 @@ html, body {
 .imgPlayer01{
     background-image: url(../img/fondoImgPlayer01.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     height: 90%; /*545px*/
     width: 38%; /*282px*/
@@ -123,7 +123,7 @@ html, body {
 .imgPlayer02{
     background-image: url(../img/fondoImgPlayer01.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     height: 90%;
     width: 38%;
@@ -276,7 +276,7 @@ html, body {
 }
 
 .statsPlayer02{
-    background-color: lightcyan;
+    background-color: black;
     height: 90%;
     width: 38%;
     margin: 0% 1%;
@@ -291,14 +291,14 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
 .imgPlayer01Slot01{
     background-image: url(../img/sonGokunImgPlayer01Slot01.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
 .statsPlayer01Slot01{
     background-image: url(../img/statsPlayer01Slot01.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -308,13 +308,115 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot02
 .imgPlayer01Slot02{
     background-image: url(../img/sonGohanImgPlayer01Slot02.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
 .statsPlayer01Slot02{
     background-image: url(../img/statsPlayer01Slot02.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+}
+
+/*------------------------------------------------------------------------------------------
+Clases que son llamadas por el evento que se activa con gridPlayer01Slot03
+------------------------------------------------------------------------------------------*/
+.imgPlayer01Slot03{
+    background-image: url(../img/vegetaImgPlayer01Slot03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.statsPlayer01Slot03{
+    background-image: url(../img/statsPlayer01Slot03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*------------------------------------------------------------------------------------------
+Clases que son llamadas por el evento que se activa con gridPlayer01Slot04
+------------------------------------------------------------------------------------------*/
+.imgPlayer01Slot04{
+    background-image: url(../img/krillinImgPlayer01Slot04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.statsPlayer01Slot04{
+    background-image: url(../img/statsPlayer01Slot04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*------------------------------------------------------------------------------------------
+Clases que son llamadas por el evento que se activa con gridPlayer02Slot01
+------------------------------------------------------------------------------------------*/
+.imgPlayer02Slot01{
+    background-image: url(../img/freezerImgPlayer02Slot01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.statsPlayer02Slot01{
+    background-image: url(../img/statsPlayer02Slot01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*------------------------------------------------------------------------------------------
+Clases que son llamadas por el evento que se activa con gridPlayer02Slot02
+------------------------------------------------------------------------------------------*/
+.imgPlayer02Slot02{
+    background-image: url(../img/cellImgPlayer02Slot02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.statsPlayer02Slot02{
+    background-image: url(../img/statsPlayer02Slot02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*------------------------------------------------------------------------------------------
+Clases que son llamadas por el evento que se activa con gridPlayer02Slot03
+------------------------------------------------------------------------------------------*/
+.imgPlayer02Slot03{
+    background-image: url(../img/majinBooImgPlayer02Slot03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.statsPlayer02Slot03{
+    background-image: url(../img/statsPlayer02Slot03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*------------------------------------------------------------------------------------------
+Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
+------------------------------------------------------------------------------------------*/
+.imgPlayer02Slot04{
+    background-image: url(../img/brolyImgPlayer02Slot04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.statsPlayer02Slot04{
+    background-image: url(../img/statsPlayer02Slot04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
