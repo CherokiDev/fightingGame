@@ -13,24 +13,259 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    height: 95%;
+    width: 95%;/*modificar para cambiar ancho total de todo*/
+    height: 95%;/*modificar para cambiar alto total de todo*/
 }
 
+
+/*ESTILOS PANTALLA 01*/
 .screen01{
     background-color: antiquewhite;
     background-image: url(../img/fondoSreen01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    display: none;
 }
 
 .button01{
     padding: 2%;
     border-radius: 3em;
+}
+
+
+/*ESTILOS PANTALLA 02*/
+.screen02{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+
+.containerRow01{
+    background-color: lightseagreen;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.namePlayer01{
+    background-color: lightblue;
+    height: 90%;
+    width: 38%;
+    margin: 0% 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyRow01{
+    background-color: lightgray;
+    height: 90%;
+    width: 20%;
+    margin: 0;
+}
+
+.namePlayer02{
+    background-color: lightblue;
+    height: 90%;
+    width: 38%;
+    margin: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerRow02{
+    background-color: lightcoral;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPlayer01{
+    background-color: lightcyan;
+    height: 90%;
+    width: 38%;
+    margin: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vsRow02{
+    background-color: lightgoldenrodyellow;
+    height: 90%;
+    width: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPlayer02{
+    background-color: lightcyan;
+    height: 90%;
+    width: 38%;
+    margin: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerRow03{
+    background-color: lightseagreen;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridPlayer01{
+    background-color: lightblue;
+    height: 90%;
+    width: 38%;
+    margin: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gridPlayer01Slot01{
+    background-color: whitesmoke;
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridPlayer01Slot02{
+    background-color: whitesmoke;
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridPlayer01Slot03{
+    background-color: whitesmoke;
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridPlayer01Slot04{
+    background-color: whitesmoke;
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyRow03{
+    background-color: lightgray;
+    height: 90%;
+    width: 20%;
+    margin: 0;
+}
+
+.gridPlayer02{
+    background-color: lightblue;
+    height: 90%;
+    width: 38%;
+    margin: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gridPlayer02Slot01{
+    background-color: whitesmoke;
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridPlayer02Slot02{
+    background-color: whitesmoke;
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridPlayer02Slot03{
+    background-color: whitesmoke;
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridPlayer02Slot04{
+    background-color: whitesmoke;
+    height: 95%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerRow04{
+    background-color: lightcoral;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.statsPlayer01{
+    background-color: lightcyan;
+    height: 90%;
+    width: 38%;
+    margin: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fightRow04{
+    background-color: lightgoldenrodyellow;
+    height: 90%;
+    width: 20%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statsPlayer02{
+    background-color: lightcyan;
+    height: 90%;
+    width: 38%;
+    margin: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
