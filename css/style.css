@@ -24,6 +24,7 @@ html, body {
     background-image: url(../img/fondoSreen01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -49,6 +50,7 @@ html, body {
     justify-content: center;*/
 }
 
+/*Aquí comienza la fila 01*/
 .containerRow01{
     background-color: lightseagreen;
     width: 100%;
@@ -85,6 +87,7 @@ html, body {
     justify-content: center;
 }
 
+/*Aquí comienza la fila 02*/
 .containerRow02{
     background-color: lightcoral;
     width: 100%;
@@ -95,13 +98,17 @@ html, body {
 }
 
 .imgPlayer01{
-    background-color: lightcyan;
-    height: 90%;
-    width: 38%;
+    background-image: url(../img/fondoImgPlayer01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 90%; /*545px*/
+    width: 38%; /*282px*/
     margin: 0% 1%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s;
 }
 
 .vsRow02{
@@ -115,7 +122,10 @@ html, body {
 }
 
 .imgPlayer02{
-    background-color: lightcyan;
+    background-image: url(../img/fondoImgPlayer01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     height: 90%;
     width: 38%;
     margin: 0% 1%;
@@ -124,6 +134,7 @@ html, body {
     justify-content: center;
 }
 
+/*Aquí comienza la fila 03*/
 .containerRow03{
     background-color: lightseagreen;
     width: 100%;
@@ -232,16 +243,21 @@ html, body {
     justify-content: center;
 }
 
+/*Aquí comienza la fila 04*/
 .containerRow04{
     background-color: lightcoral;
     width: 100%;
     height: 25%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .statsPlayer01{
-    background-color: lightcyan;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     height: 90%;
     width: 38%;
     margin: 0% 1%;
@@ -268,4 +284,32 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*------------------------------------------------------------------------------------------
+Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
+------------------------------------------------------------------------------------------*/
+.imgPlayer01Slot01{
+    background-image: url(../img/sonGokuImgPlayer01Slot01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 1s;
+}
+
+.statsPlayer01Slot01{
+    background-image: url(../img/statsPlayer01Slot01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/*------------------------------------------------------------------------------------------
+Clases que son llamadas por el evento que se activa con gridPlayer01Slot02
+------------------------------------------------------------------------------------------*/
+.imgPlayer01Slot02{
+    background-image: url(../img/sonGohanImgPlayer01Slot02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
