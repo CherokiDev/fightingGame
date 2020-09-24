@@ -84,10 +84,8 @@ const selectPersonaje = (nombre, jugador) => {
 
     jugador === 1 ? player1seleccion = preSeleccion : player2seleccion = preSeleccion; 
 
-    console.log(player1seleccion, player2seleccion)
+    console.log(player1seleccion, player2seleccion)/* lo tengo que borrar */
 }
-
-let ataqueplayer01 = document.getElementById('attackPlayer01');
 
 
 //Guardo fightRow04 en una constante
@@ -99,7 +97,7 @@ fight.addEventListener('click', () => {
         document.getElementById('screen02').style.display = "none";
         document.getElementById('screen03').style.display = "block";
         
-    }else{alert("Debes seleccionar los personajes");
+    }else{alert("Debes seleccionar ambos personajes");
         
     }
     
