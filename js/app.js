@@ -71,6 +71,21 @@ const selectPersonaje = (nombre, jugador) => {
     console.log(player1seleccion, player2seleccion)
 }
 
+//Guardo fightRow04 en una constante
+const fight = document.getElementById('fightRow04');
+
+//Construyo el evento que cambia de la pantalla 02 a la pantalla 03
+fight.addEventListener('click', () => {
+    if (player1seleccion && player2seleccion){
+        document.getElementById('screen02').style.display = "none";
+        document.getElementById('screen03').style.display = "block";
+        
+    }else{alert("Debes seleccionar los personajes");
+        
+    }
+    
+})
+
 
 
 //Guardo buttonScreen01 en una constante
@@ -212,11 +227,4 @@ gridJugador02Casilla04.addEventListener('mouseleave', () => {
 
 
 
-//Guardo fightRow04 en una constante
-const fight = document.getElementById('fightRow04');
 
-//Construyo el evento que cambia de la pantalla 02 a la pantalla 03
-fight.addEventListener('click', () => {
-    document.getElementById('screen02').style.display = "none";
-    document.getElementById('screen03').style.display = "block";
-})
