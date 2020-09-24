@@ -24,8 +24,52 @@ const pers7 = new Personajes("Majin Buu",100,85,95);
 const pers8 = new Personajes("Broly", 100,95,95);
 
 
+let player1seleccion;
+let player2seleccion;
+
+const selectPersonaje = (nombre, jugador) => {
 
 
+    let preSeleccion;
+    switch(nombre){
+        case "goku":
+            preSeleccion = pers1;
+        break;
+
+        case "gohan":
+            preSeleccion = pers2;
+        break;
+
+        case "vegeta":
+            preSeleccion = pers3;
+        break;
+
+        case "krillin":
+            preSeleccion = pers4;
+        break;
+
+        case "freezer":
+            preSeleccion = pers5;
+        break;
+
+        case "cell":
+            preSeleccion = pers6;
+        break;
+
+        case "buu":
+            preSeleccion = pers7;
+        break;
+
+        case "broly":
+            preSeleccion = pers8;
+        break;
+
+    }
+
+    jugador === 1 ? player1seleccion = preSeleccion : player2seleccion = preSeleccion; 
+
+    console.log(player1seleccion, player2seleccion)
+}
 
 
 
@@ -164,4 +208,15 @@ gridJugador02Casilla04.addEventListener('mouseenter', () => {
 gridJugador02Casilla04.addEventListener('mouseleave', () => {
     document.getElementById('imgPlayer02').classList.remove('imgPlayer02Slot04')
     document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot04')
+})
+
+
+
+//Guardo fightRow04 en una constante
+const fight = document.getElementById('fightRow04');
+
+//Construyo el evento que cambia de la pantalla 02 a la pantalla 03
+fight.addEventListener('click', () => {
+    document.getElementById('screen02').style.display = "none";
+    document.getElementById('screen03').style.display = "block";
 })
