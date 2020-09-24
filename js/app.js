@@ -1,6 +1,33 @@
 //VOY A IR ESCRIBIENDO LAS VARIABLES EN ESPAÑOL, Y LAS LLAMADAS
 //AL HTML EN INGLES, PARA ASÍ GUIARME POR DONDE VOY
 
+class Personajes {
+    constructor(nombre, vida, fuerza, defensa){
+        this.nombre = nombre;
+        this.vida = vida;
+        this.fuerza = fuerza;
+        this.defensa = defensa;
+    }
+
+    // cosas que le pueden pasar a los personajes
+
+}
+
+
+const pers1 = new Personajes("Son Goku",100,90,60);
+const pers2 = new Personajes("Son Gohan",100,80,95);
+const pers3 = new Personajes("Vegeta",100,80,85);
+const pers4 = new Personajes("Krillin", 100,80,90,80);
+const pers5 = new Personajes("Freezer", 100,85,95,95);
+const pers6 = new Personajes("Cell",100,95,95);
+const pers7 = new Personajes("Majin Buu",100,85,95);
+const pers8 = new Personajes("Broly", 100,95,95);
+
+
+
+
+
+
 
 //Guardo buttonScreen01 en una constante
 const boton01Pantalla01 = document.getElementById('button01Screen01');
