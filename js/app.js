@@ -11,6 +11,22 @@ class Personajes {
 
     // cosas que le pueden pasar a los personajes
 
+    botonAtaquePlayer01(){
+        player1seleccion.vida -= player2seleccion.fuerza
+        document.getElementById("statsPlayer01Screen03").innerHTML = `Vida ${player1seleccion.vida}`
+
+    return;
+
+    }
+
+    botonAtaquePlayer02(){
+        player2seleccion.vida -= player1seleccion.fuerza
+        document.getElementById("statsPlayer02Screen03").innerHTML = `Vida ${player2seleccion.vida}`
+
+    return;
+
+    }
+
 }
 
 
@@ -70,6 +86,9 @@ const selectPersonaje = (nombre, jugador) => {
 
     console.log(player1seleccion, player2seleccion)
 }
+
+let ataqueplayer01 = document.getElementById('attackPlayer01');
+
 
 //Guardo fightRow04 en una constante
 const fight = document.getElementById('fightRow04');
