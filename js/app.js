@@ -12,16 +12,20 @@ class Personajes {
     // cosas que le pueden pasar a los personajes
 
     botonAtaquePlayer01(){
-        player1seleccion.vida -= player2seleccion.fuerza
-        document.getElementById("statsPlayer01Screen03").innerHTML = `Vida ${player1seleccion.vida}`
+        let diferenciaStatsBoton1 = player1seleccion.fuerza - player2seleccion.defensa;
+        player2seleccion.vida -= diferenciaStatsBoton1
+        document.getElementById("statsPlayer01Screen03").innerHTML = `La vida de ${player2seleccion.nombre} es ${player2seleccion.vida}`
 
     return;
 
     }
 
     botonAtaquePlayer02(){
-        player2seleccion.vida -= player1seleccion.fuerza
-        document.getElementById("statsPlayer02Screen03").innerHTML = `Vida ${player2seleccion.vida}`
+        let diferenciaStatsBoton2 = player2seleccion.fuerza - player1seleccion.defensa;
+        player1seleccion.vida -= diferenciaStatsBoton2
+        document.getElementById("statsPlayer02Screen03").innerHTML = `La vida ${player1seleccion.nombre} es de ${player1seleccion.vida}`
+
+
 
     return;
 
@@ -31,13 +35,13 @@ class Personajes {
 
 
 const pers1 = new Personajes("Son Goku",100,90,60);
-const pers2 = new Personajes("Son Gohan",100,80,95);
-const pers3 = new Personajes("Vegeta",100,80,85);
-const pers4 = new Personajes("Krillin", 100,80,90,80);
-const pers5 = new Personajes("Freezer", 100,85,95,95);
-const pers6 = new Personajes("Cell",100,95,95);
-const pers7 = new Personajes("Majin Buu",100,85,95);
-const pers8 = new Personajes("Broly", 100,95,95);
+const pers2 = new Personajes("Son Gohan",100,80,75);
+const pers3 = new Personajes("Vegeta",100,80,60);
+const pers4 = new Personajes("Krillin", 100,80,50,);
+const pers5 = new Personajes("Freezer", 100,85,75,);
+const pers6 = new Personajes("Cell",100,95,70);
+const pers7 = new Personajes("Majin Buu",100,85,55);
+const pers8 = new Personajes("Broly", 100,95,75);
 
 
 let player1seleccion;
