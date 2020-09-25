@@ -435,3 +435,18 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     align-items: center;
     display: none;
 }
+
+
+/*ESTILOS PANTALLA 04*/
+.screen04{
+    background-color: rgb(60, 141, 165);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

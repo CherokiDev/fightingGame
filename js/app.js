@@ -1,6 +1,8 @@
 //VOY A IR ESCRIBIENDO LAS VARIABLES EN ESPAÑOL, Y LAS LLAMADAS
 //AL HTML EN INGLES, PARA ASÍ GUIARME POR DONDE VOY
 
+
+// Creación de clases
 class Personajes {
     constructor(nombre, vida, fuerza, defensa){
         this.nombre = nombre;
@@ -9,31 +11,38 @@ class Personajes {
         this.defensa = defensa;
     }
 
-    // cosas que le pueden pasar a los personajes
-
+    // Función que realiza el ataque del pj1 al pj2
     botonAtaquePlayer01(){
         let diferenciaStatsBoton1 = player1seleccion.fuerza - player2seleccion.defensa;
         player2seleccion.vida -= diferenciaStatsBoton1
         document.getElementById("statsPlayer01Screen03").innerHTML = `La vida de ${player2seleccion.nombre} es ${player2seleccion.vida}`
+        if(player2seleccion.vida <= 0){
+            document.getElementById('screen03').style.display = "none";
+            document.getElementById('screen04').style.display = "block";
+            document.getElementById('player01Win').innerHTML = (`Ha vencido el jugador ${player1seleccion.nombre}`)
 
+        }
     return;
-
     }
 
+    // Función que realiza el ataque del pj2 al pj1
     botonAtaquePlayer02(){
         let diferenciaStatsBoton2 = player2seleccion.fuerza - player1seleccion.defensa;
         player1seleccion.vida -= diferenciaStatsBoton2
         document.getElementById("statsPlayer02Screen03").innerHTML = `La vida ${player1seleccion.nombre} es de ${player1seleccion.vida}`
-
-
-
+        if(player1seleccion.vida <= 0){
+            document.getElementById('screen03').style.display = "none";
+            document.getElementById('screen04').style.display = "block";
+            document.getElementById('player02Win').innerHTML = (`Ha vencido el jugador ${player2seleccion.nombre}`)
+        }
     return;
-
     }
+
 
 }
 
 
+// Creación de personajes
 const pers1 = new Personajes("Son Goku",100,90,60);
 const pers2 = new Personajes("Son Gohan",100,80,75);
 const pers3 = new Personajes("Vegeta",100,80,60);
@@ -44,8 +53,12 @@ const pers7 = new Personajes("Majin Buu",100,85,55);
 const pers8 = new Personajes("Broly", 100,95,75);
 
 
+
+// Variables para asignar luego los personajes a sus respectivos players
 let player1seleccion;
 let player2seleccion;
+
+
 
 const selectPersonaje = (nombre, jugador) => {
 
@@ -102,10 +115,48 @@ fight.addEventListener('click', () => {
         document.getElementById('screen03').style.display = "block";
         
     }else{alert("Debes seleccionar ambos personajes");
-        
     }
     
 })
+
+
+
+//Guardo reset en una constante
+const reset = document.getElementById('reset');
+
+//Construyo el evento que cambia de la pantalla 01 a la pantalla 02
+reset.addEventListener('click', () => {
+    window.location.reload();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
