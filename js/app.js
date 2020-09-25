@@ -16,6 +16,9 @@ class Personajes {
         let diferenciaStatsBoton1 = player1seleccion.fuerza - player2seleccion.defensa;
         player2seleccion.vida -= diferenciaStatsBoton1
         document.getElementById("statsPlayer01Screen03").innerHTML = `La vida de ${player2seleccion.nombre} es ${player2seleccion.vida}`
+        
+
+
         if(player2seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
             document.getElementById('screen04').style.display = "block";
@@ -57,6 +60,31 @@ const pers8 = new Personajes("Broly", 100,95,75);
 // Variables para asignar luego los personajes a sus respectivos players
 let player1seleccion;
 let player2seleccion;
+
+
+
+
+
+
+
+const activeButtomPlayer01 = document.getElementById('attackPlayer01');
+const activeButtomPlayer02 = document.getElementById('attackPlayer02');
+
+activeButtomPlayer01.addEventListener('click', () => {
+    if(activeButtomPlayer01.disabled = true){
+        document.getElementById('attackPlayer02').disabled = false;
+    }
+})
+
+activeButtomPlayer02.addEventListener('click', () => {
+    if(activeButtomPlayer02.disabled = true){
+        document.getElementById('attackPlayer01').disabled = false;
+    }
+    
+})
+
+
+
 
 
 
@@ -144,7 +172,16 @@ reset.addEventListener('click', () => {
 
 
 
+/*
+ FALTA POR HACER
+ ---añadir imágenes al hacer clic en el jugador
+    o bien    ---pintar "seleccionado" o un background-color sobre el slot
+ ---desactivar el boton de ataque hasta que ataque el otro jugador (https://flaviocopes.com/how-to-disable-button-javascript/)
+ ---añadir posibilidad de tomar una cura (habichuela mágica)
+ ---pintar stats pero no con imágenes
+ ---intentar mejorar el código
 
+*/
 
 
 
