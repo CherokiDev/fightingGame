@@ -41,7 +41,6 @@ class Personajes {
     return;
     }
 
-
 }
 
 
@@ -64,18 +63,17 @@ let player2seleccion;
 
 
 
-
-
-
 const activeButtomPlayer01 = document.getElementById('attackPlayer01');
 const activeButtomPlayer02 = document.getElementById('attackPlayer02');
 
+// desactiva el botón de ataque del jugador 1 hasta que ataca el jugador 2
 activeButtomPlayer01.addEventListener('click', () => {
     if(activeButtomPlayer01.disabled = true){
         document.getElementById('attackPlayer02').disabled = false;
     }
 })
 
+// desactiva el botón de ataque del jugador 2 hasta que ataca el jugador 1
 activeButtomPlayer02.addEventListener('click', () => {
     if(activeButtomPlayer02.disabled = true){
         document.getElementById('attackPlayer01').disabled = false;
@@ -95,39 +93,55 @@ const selectPersonaje = (nombre, jugador) => {
     switch(nombre){
         case "goku":
             preSeleccion = pers1;
+            document.getElementById("namePlayer01").innerHTML = "Player 01 - Goku";
         break;
 
         case "gohan":
             preSeleccion = pers2;
+            document.getElementById("namePlayer01").innerHTML = "Player 01 - Gohan";
         break;
 
         case "vegeta":
             preSeleccion = pers3;
+            document.getElementById("namePlayer01").innerHTML = "Player 01 - Vegeta";
         break;
 
         case "krillin":
             preSeleccion = pers4;
+            document.getElementById("namePlayer01").innerHTML = "Player 01 - Krillin";
         break;
 
         case "freezer":
             preSeleccion = pers5;
+            document.getElementById("namePlayer02").innerHTML = "Player 02 - Freezer";
         break;
 
         case "cell":
             preSeleccion = pers6;
+            document.getElementById("namePlayer02").innerHTML = "Player 02 - Cell";
         break;
 
         case "buu":
             preSeleccion = pers7;
+            document.getElementById("namePlayer02").innerHTML = "Player 02 - Majin Buu";
         break;
 
         case "broly":
             preSeleccion = pers8;
+            document.getElementById("namePlayer02").innerHTML = "Player 02 - Broly";
         break;
 
     }
 
-    jugador === 1 ? player1seleccion = preSeleccion : player2seleccion = preSeleccion; 
+    /*jugador === 1 ? player1seleccion = preSeleccion : player2seleccion = preSeleccion; */
+
+    if(jugador === 1){
+        player1seleccion = preSeleccion;
+    }else{
+        player2seleccion = preSeleccion;
+    }
+
+
 
     console.log(player1seleccion, player2seleccion)/* lo tengo que borrar */
 }
@@ -146,6 +160,8 @@ fight.addEventListener('click', () => {
     }
     
 })
+
+
 
 
 
@@ -175,11 +191,11 @@ reset.addEventListener('click', () => {
 /*
  FALTA POR HACER
  ---añadir imágenes al hacer clic en el jugador
-    o bien    ---pintar "seleccionado" o un background-color sobre el slot
- ---desactivar el boton de ataque hasta que ataque el otro jugador (https://flaviocopes.com/how-to-disable-button-javascript/)
+    o bien    ---pintar "seleccionado" o un background-color sobre el slot del jugador
  ---añadir posibilidad de tomar una cura (habichuela mágica)
  ---pintar stats pero no con imágenes
  ---intentar mejorar el código
+ ---ordenar el código
 
 */
 
