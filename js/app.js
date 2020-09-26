@@ -198,6 +198,7 @@ reset.addEventListener('click', () => {
  ---pintar stats pero no con imágenes
  ---intentar mejorar el código
  ---ordenar el código
+ ---poner de fondo en la screen02 la imagen del dragon shenron
 
 */
 

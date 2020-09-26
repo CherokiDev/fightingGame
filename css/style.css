@@ -94,16 +94,17 @@ html, body {
 }
 
 .emptyRow01{
-    background-color: rgb(0, 0, 0);
+    background-image: url(../img/screen02Versus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 90%;
     width: 20%;
     margin: 0;
-    font-family: "Dragon Ball";
-    font-size: 3vw;
-    color: rgb(248, 91, 26);
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 0em 0em 1em 0.7em;
 }
 
 .namePlayer02{
@@ -121,7 +122,7 @@ html, body {
 
 /*Aquí comienza la fila 02*/
 .containerRow02{
-    background-color: lightcoral;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 45%;
     display: flex;
@@ -130,7 +131,7 @@ html, body {
 }
 
 .imgPlayer01{
-    background-image: url(../img/fondoImgPlayer01.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -140,10 +141,14 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 0em 0em 1em 1em;
 }
 
 .vsRow02{
-    background-color: lightgoldenrodyellow;
+    background-image: url(../img/screen02VersusRow02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     height: 90%;
     width: 20%;
     margin: 0;
@@ -153,7 +158,7 @@ html, body {
 }
 
 .imgPlayer02{
-    background-image: url(../img/fondoImgPlayer01.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -163,6 +168,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 0em 0em 1em 1em ;
 }
 
 /*Aquí comienza la fila 03*/
@@ -321,14 +327,14 @@ html, body {
 Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
 ------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot01{
-    background-image: url(../img/sonGokunImgPlayer01Slot01.png);
+    background-image: url(../img/screen02GokuAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .statsPlayer01Slot01{
-    background-image: url(../img/statsPlayer01Slot01.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -338,14 +344,14 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
 Clases que son llamadas por el evento que se activa con gridPlayer01Slot02
 ------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot02{
-    background-image: url(../img/sonGohanImgPlayer01Slot02.png);
+    background-image: url(../img/screen02GohanAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .statsPlayer01Slot02{
-    background-image: url(../img/statsPlayer01Slot02.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -355,14 +361,14 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot02
 Clases que son llamadas por el evento que se activa con gridPlayer01Slot03
 ------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot03{
-    background-image: url(../img/vegetaImgPlayer01Slot03.png);
+    background-image: url(../img/screen02VegetaAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .statsPlayer01Slot03{
-    background-image: url(../img/statsPlayer01Slot03.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -372,14 +378,14 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot03
 Clases que son llamadas por el evento que se activa con gridPlayer01Slot04
 ------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot04{
-    background-image: url(../img/krillinImgPlayer01Slot04.png);
+    background-image: url(../img/screen02KrillinAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .statsPlayer01Slot04{
-    background-image: url(../img/statsPlayer01Slot04.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -389,14 +395,14 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot04
 Clases que son llamadas por el evento que se activa con gridPlayer02Slot01
 ------------------------------------------------------------------------------------------*/
 .imgPlayer02Slot01{
-    background-image: url(../img/freezerImgPlayer02Slot01.png);
+    background-image: url(../img/screen02FreezerAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .statsPlayer02Slot01{
-    background-image: url(../img/statsPlayer02Slot01.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -406,14 +412,14 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot01
 Clases que son llamadas por el evento que se activa con gridPlayer02Slot02
 ------------------------------------------------------------------------------------------*/
 .imgPlayer02Slot02{
-    background-image: url(../img/cellImgPlayer02Slot02.png);
+    background-image: url(../img/screen02CellAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .statsPlayer02Slot02{
-    background-image: url(../img/statsPlayer02Slot02.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -423,14 +429,14 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot02
 Clases que son llamadas por el evento que se activa con gridPlayer02Slot03
 ------------------------------------------------------------------------------------------*/
 .imgPlayer02Slot03{
-    background-image: url(../img/majinBooImgPlayer02Slot03.png);
+    background-image: url(../img/screen02MajinBuuAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .statsPlayer02Slot03{
-    background-image: url(../img/statsPlayer02Slot03.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -440,14 +446,14 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot03
 Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 ------------------------------------------------------------------------------------------*/
 .imgPlayer02Slot04{
-    background-image: url(../img/brolyImgPlayer02Slot04.png);
+    background-image: url(../img/screen02BrolyAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .statsPlayer02Slot04{
-    background-image: url(../img/statsPlayer02Slot04.jpg);
+    background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
