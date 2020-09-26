@@ -193,6 +193,8 @@ reset.addEventListener('click', () => {
  ---añadir imágenes al hacer clic en el jugador
     o bien    ---pintar "seleccionado" o un background-color sobre el slot del jugador
  ---añadir posibilidad de tomar una cura (habichuela mágica)
+ ---añadir setTimeOut para pasar a la lucha
+ ---añadir setTimeOut a la primera pantalla como si estuviera cargando la consola
  ---pintar stats pero no con imágenes
  ---intentar mejorar el código
  ---ordenar el código
