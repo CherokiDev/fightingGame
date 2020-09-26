@@ -638,6 +638,33 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     align-items: center;
 }
 
+.screen03ButtonsPlayer01{
+    background-color: antiquewhite;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journal{
+    background-color: lightcoral;
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen03ButtonsPlayer02{
+    background-color: lightgrey;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
