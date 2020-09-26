@@ -547,7 +547,6 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 }
 
 .screen03Row01{
-    background-color: aqua;
     width: 100%;
     height: 15%;
     display: flex;
@@ -558,7 +557,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 .screen03ContainerLifePlayer01{
     background-color: black;
     width: 40%;
-    height: 60%;
+    height: 40%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -582,7 +581,6 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 }
 
 .screen03Timer{
-    background-color: azure;
     width: 10%;
     height: 80%;
     display: flex;
@@ -597,7 +595,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 .screen03ContainerLifePlayer02{
     background-color: black;
     width: 40%;
-    height: 60%;
+    height: 40%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -621,7 +619,6 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 }
 
 .screen03Row02{
-    background-color: azure;
     width: 100%;
     height: 60%;
     display: flex;
@@ -630,7 +627,6 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 }
 
 .screen03Row03{
-    background-color: chartreuse;
     width: 100%;
     height: 25%;
     display: flex;
@@ -639,7 +635,6 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 }
 
 .screen03ButtonsPlayer01{
-    background-color: antiquewhite;
     width: 40%;
     height: 90%;
     display: flex;
@@ -659,16 +654,16 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 }
 
 .journal{
-    background-color: lightcoral;
+    background-color: rgba(138, 138, 138, 0.5);
     width: 20%;
     height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1em;
 }
 
 .screen03ButtonsPlayer02{
-    background-color: lightgrey;
     width: 40%;
     height: 90%;
     display: flex;

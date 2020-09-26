@@ -160,26 +160,42 @@ fight.addEventListener('click', () => {
     if (player1seleccion && player2seleccion){
         document.getElementById('screen02').style.display = "none";
         document.getElementById('screen03').style.display = "block";
+
+        // Countdown
+        let timeleft = 99;
+        let downloadTimer = setInterval(function(){
+            if(timeleft <= 0){
+                clearInterval(downloadTimer);
+                document.getElementById("screen03Timer").innerHTML = "End";
+            } else {
+                document.getElementById("screen03Timer").innerHTML = timeleft;
+            }
+            timeleft -= 1;
+            }, 1000);
+
+        let random = Math.floor(Math.random() * 9) + 0;
+        let bigSize = ["url('../img/scenes/scene01.jpg')",
+                        "url('../img/scenes/scene02.jpg')" ,
+                        "url('../img/scenes/scene03.png')",
+                        "url('../img/scenes/scene04.png')",
+                        "url('../img/scenes/scene05.jpg')",
+                        "url('../img/scenes/scene06.png')",
+                        "url('../img/scenes/scene07.jpg')",
+                        "url('../img/scenes/scene08.jpg')",
+                        "url('../img/scenes/scene09.jpg')"];
+        document.getElementById("screen03").style.backgroundImage=bigSize[random];
+              
+        
         
     }else if(!player1seleccion){
-        document.getElementById("namePlayer01").innerHTML = "Select Player";
+        document.getElementById("namePlayer01").innerHTML = "Select Player!";
 
     }else if(!player2seleccion){
-        document.getElementById("namePlayer02").innerHTML = "Select Player";
+        document.getElementById("namePlayer02").innerHTML = "Select Player!";
     }
 
 
-    // Countdown
-    var timeleft = 99;
-    var downloadTimer = setInterval(function(){
-        if(timeleft <= 0){
-            clearInterval(downloadTimer);
-            document.getElementById("screen03Timer").innerHTML = "End";
-        } else {
-            document.getElementById("screen03Timer").innerHTML = timeleft;
-          }
-        timeleft -= 1;
-        }, 1000);
+    
 
     
 })
@@ -219,7 +235,6 @@ reset.addEventListener('click', () => {
  ---añadir posibilidad de tomar una cura (habichuela mágica)
  ---añadir setTimeOut para pasar a la lucha
  ---añadir setTimeOut a la primera pantalla como si estuviera cargando la consola
- ---pintar stats pero no con imágenes
  ---intentar mejorar el código
  ---ordenar el código
  ---poner de fondo en la screen ultima la imagen del dragon shenron
