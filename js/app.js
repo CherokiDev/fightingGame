@@ -157,7 +157,11 @@ fight.addEventListener('click', () => {
         document.getElementById('screen02').style.display = "none";
         document.getElementById('screen03').style.display = "block";
         
-    }else{alert("Debes seleccionar ambos personajes");
+    }else if(!player1seleccion){
+        document.getElementById("namePlayer01").innerHTML = "Select Player";
+
+    }else if(!player2seleccion){
+        document.getElementById("namePlayer02").innerHTML = "Select Player";
     }
     
 })
@@ -403,7 +407,4 @@ gridJugador02Casilla04.addEventListener('mouseleave', () => {
     document.getElementById('imgPlayer02').classList.remove('imgPlayer02Slot04')
     document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot04')
 })
-
-
-
 
