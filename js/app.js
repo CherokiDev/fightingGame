@@ -200,6 +200,7 @@ reset.addEventListener('click', () => {
  ---ordenar el código
  ---poner de fondo en la screen02 la imagen del dragon shenron
  ---añadir efecto de super saiyan al slot al ser seleccionado
+ ---cancion "disturbed - indestructible" (https://www.youtube.com/watch?v=L2QTtdeL3dE&list=RDEMww6ZEHgLhQ-8eu_x7Z-FJw&index=27) de fondo en las batallas
 
 */
 
@@ -234,6 +235,12 @@ const gridJugador01Casilla01 = document.getElementById('gridPlayer01Slot01');
 gridJugador01Casilla01.addEventListener('mouseenter', () => {
     document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot01');
     document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot01');
+    document.getElementById('statsPlayer01').innerHTML = 
+    `
+    Vida: ${pers1.vida}<br>
+    Fuerza: ${pers1.fuerza}<br>
+    Defensa: ${pers1.defensa}
+    `
 })
 
 //y estos eventos devuelven todo a su estado original al quitar el mouse de encima
@@ -250,6 +257,12 @@ const gridJugador01Casilla02 = document.getElementById('gridPlayer01Slot02');
 gridJugador01Casilla02.addEventListener('mouseenter', () => {
     document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot02');
     document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot02');
+    document.getElementById('statsPlayer01').innerHTML = 
+    `
+    Vida: ${pers2.vida}<br>
+    Fuerza: ${pers2.fuerza}<br>
+    Defensa: ${pers2.defensa}
+    `
 })
 
 //y estos eventos devuelven todo a su estado original al quitar el mouse de encima
@@ -266,6 +279,12 @@ const gridJugador01Casilla03 = document.getElementById('gridPlayer01Slot03');
 gridJugador01Casilla03.addEventListener('mouseenter', () => {
     document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot03');
     document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot03');
+    document.getElementById('statsPlayer01').innerHTML =
+    `
+    Vida: ${pers3.vida}<br>
+    Fuerza: ${pers3.fuerza}<br>
+    Defensa: ${pers3.defensa}
+    `
 })
 
 //y estos eventos devuelven todo a su estado original al quitar el mouse de encima
@@ -282,6 +301,12 @@ const gridJugador01Casilla04 = document.getElementById('gridPlayer01Slot04');
 gridJugador01Casilla04.addEventListener('mouseenter', () => {
     document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot04');
     document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot04');
+    document.getElementById('statsPlayer01').innerHTML =
+    `
+    Vida: ${pers4.vida}<br>
+    Fuerza: ${pers4.fuerza}<br>
+    Defensa: ${pers4.defensa}
+    `
 })
 
 //y estos eventos devuelven todo a su estado original al quitar el mouse de encima
@@ -298,6 +323,12 @@ const gridJugador02Casilla01 = document.getElementById('gridPlayer02Slot01');
 gridJugador02Casilla01.addEventListener('mouseenter', () => {
     document.getElementById('imgPlayer02').classList.add('imgPlayer02Slot01');
     document.getElementById('statsPlayer02').classList.add('statsPlayer02Slot01');
+    document.getElementById('statsPlayer02').innerHTML =
+    `
+    Vida: ${pers5.vida}<br>
+    Fuerza: ${pers5.fuerza}<br>
+    Defensa: ${pers5.defensa}
+    `
 })
 
 //y estos eventos devuelven todo a su estado original al quitar el mouse de encima
@@ -314,6 +345,12 @@ const gridJugador02Casilla02 = document.getElementById('gridPlayer02Slot02');
 gridJugador02Casilla02.addEventListener('mouseenter', () => {
     document.getElementById('imgPlayer02').classList.add('imgPlayer02Slot02');
     document.getElementById('statsPlayer02').classList.add('statsPlayer02Slot02');
+    document.getElementById('statsPlayer02').innerHTML =
+    `
+    Vida: ${pers6.vida}<br>
+    Fuerza: ${pers6.fuerza}<br>
+    Defensa: ${pers6.defensa}
+    `
 })
 
 //y estos eventos devuelven todo a su estado original al quitar el mouse de encima
@@ -330,6 +367,12 @@ const gridJugador02Casilla03 = document.getElementById('gridPlayer02Slot03');
 gridJugador02Casilla03.addEventListener('mouseenter', () => {
     document.getElementById('imgPlayer02').classList.add('imgPlayer02Slot03');
     document.getElementById('statsPlayer02').classList.add('statsPlayer02Slot03');
+    document.getElementById('statsPlayer02').innerHTML =
+    `
+    Vida: ${pers7.vida}<br>
+    Fuerza: ${pers7.fuerza}<br>
+    Defensa: ${pers7.defensa}
+    `
 })
 
 //y estos eventos devuelven todo a su estado original al quitar el mouse de encima
@@ -346,6 +389,12 @@ const gridJugador02Casilla04 = document.getElementById('gridPlayer02Slot04');
 gridJugador02Casilla04.addEventListener('mouseenter', () => {
     document.getElementById('imgPlayer02').classList.add('imgPlayer02Slot04');
     document.getElementById('statsPlayer02').classList.add('statsPlayer02Slot04');
+    document.getElementById('statsPlayer02').innerHTML =
+    `
+    Vida: ${pers8.vida}<br>
+    Fuerza: ${pers8.fuerza}<br>
+    Defensa: ${pers8.defensa}
+    `
 })
 
 //y estos eventos devuelven todo a su estado original al quitar el mouse de encima

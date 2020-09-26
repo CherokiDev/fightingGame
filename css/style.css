@@ -5,6 +5,7 @@ html, body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-color: black;
     
 }
 
@@ -18,14 +19,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;/*modificar para cambiar ancho total de todo*/
-    height: 95%;/*modificar para cambiar alto total de todo*/
+    width: 100%;/*modificar para cambiar ancho total de todo*/
+    height: 100%;/*modificar para cambiar alto total de todo*/
 }
 
 
 /*ESTILOS PANTALLA 01*/
 .screen01{
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
     background-image: url(../img/backgroundScreen01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -330,7 +331,7 @@ html, body {
 
 /*Aquí comienza la fila 04*/
 .containerRow04{
-    background-color: lightcoral;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 25%;
     display: flex;
@@ -371,6 +372,15 @@ html, body {
     justify-content: center;
 }
 
+
+
+
+
+
+
+
+
+
 /*------------------------------------------------------------------------------------------
 Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
 ------------------------------------------------------------------------------------------*/
@@ -382,10 +392,10 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
 }
 
 .statsPlayer01Slot01{
-    background-image: url(../img/statsPlayer01Slot01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(0, 0, 0);
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -399,10 +409,10 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot02
 }
 
 .statsPlayer01Slot02{
-    background-image: url(../img/statsPlayer01Slot02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -416,10 +426,10 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot03
 }
 
 .statsPlayer01Slot03{
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -433,10 +443,10 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot04
 }
 
 .statsPlayer01Slot04{
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -450,10 +460,10 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot01
 }
 
 .statsPlayer02Slot01{
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -467,10 +477,10 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot02
 }
 
 .statsPlayer02Slot02{
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -484,10 +494,10 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot03
 }
 
 .statsPlayer02Slot03{
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
 }
 
 /*------------------------------------------------------------------------------------------
@@ -501,10 +511,10 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 }
 
 .statsPlayer02Slot04{
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
 }
 
 
