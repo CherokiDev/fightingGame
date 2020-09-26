@@ -93,12 +93,12 @@ const selectPersonaje = (nombre, jugador) => {
     switch(nombre){
         case "goku":
             preSeleccion = pers1;
-            document.getElementById("namePlayer01").innerHTML = "Goku";
+            document.getElementById("namePlayer01").innerHTML = "Son Goku";
         break;
 
         case "gohan":
             preSeleccion = pers2;
-            document.getElementById("namePlayer01").innerHTML = "Gohan";
+            document.getElementById("namePlayer01").innerHTML = "son Gohan";
         break;
 
         case "vegeta":
@@ -199,6 +199,7 @@ reset.addEventListener('click', () => {
  ---intentar mejorar el código
  ---ordenar el código
  ---poner de fondo en la screen02 la imagen del dragon shenron
+ ---añadir efecto de super saiyan al slot al ser seleccionado
 
 */
 

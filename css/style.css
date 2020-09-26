@@ -173,7 +173,7 @@ html, body {
 
 /*Aquí comienza la fila 03*/
 .containerRow03{
-    background-color: lightseagreen;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 15%;
     display: flex;
@@ -182,7 +182,7 @@ html, body {
 }
 
 .gridPlayer01{
-    background-color: lightblue;
+    background-color: rgb(0, 0, 0);
     height: 90%;
     width: 38%;
     margin: 0% 1%;
@@ -192,7 +192,13 @@ html, body {
 }
 
 .gridPlayer01Slot01{
-    background-color: whitesmoke;
+    background-image: url(../img/slotGoku.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: 0.3em solid rgb(138, 146, 148);
+    border-radius: 1em;
     height: 95%;
     width: 20%;
     display: flex;
@@ -201,7 +207,13 @@ html, body {
 }
 
 .gridPlayer01Slot02{
-    background-color: whitesmoke;
+    background-image: url(../img/slotGohan.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 0.3em solid rgb(138, 146, 148);
     height: 95%;
     width: 20%;
     display: flex;
@@ -210,7 +222,13 @@ html, body {
 }
 
 .gridPlayer01Slot03{
-    background-color: whitesmoke;
+    background-image: url(../img/slotVegeta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 0.3em solid rgb(138, 146, 148);
     height: 95%;
     width: 20%;
     display: flex;
@@ -219,7 +237,13 @@ html, body {
 }
 
 .gridPlayer01Slot04{
-    background-color: whitesmoke;
+    background-image: url(../img/slotKrillin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 0.3em solid rgb(138, 146, 148);
     height: 95%;
     width: 20%;
     display: flex;
@@ -228,14 +252,14 @@ html, body {
 }
 
 .emptyRow03{
-    background-color: lightgray;
+    background-color: rgb(0, 0, 0);
     height: 90%;
     width: 20%;
     margin: 0;
 }
 
 .gridPlayer02{
-    background-color: lightblue;
+    background-color: rgb(0, 0, 0);
     height: 90%;
     width: 38%;
     margin: 0% 1%;
@@ -245,7 +269,13 @@ html, body {
 }
 
 .gridPlayer02Slot01{
-    background-color: whitesmoke;
+    background-image: url(../img/slotFreezer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 0.3em solid rgb(138, 146, 148);
     height: 95%;
     width: 20%;
     display: flex;
@@ -254,7 +284,13 @@ html, body {
 }
 
 .gridPlayer02Slot02{
-    background-color: whitesmoke;
+    background-image: url(../img/slotCell.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 0.3em solid rgb(138, 146, 148);
     height: 95%;
     width: 20%;
     display: flex;
@@ -263,7 +299,13 @@ html, body {
 }
 
 .gridPlayer02Slot03{
-    background-color: whitesmoke;
+    background-image: url(../img/slotMajinBuu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 0.3em solid rgb(138, 146, 148);
     height: 95%;
     width: 20%;
     display: flex;
@@ -272,7 +314,13 @@ html, body {
 }
 
 .gridPlayer02Slot04{
-    background-color: whitesmoke;
+    background-image: url(../img/slotBroly.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 0.3em solid rgb(138, 146, 148);
     height: 95%;
     width: 20%;
     display: flex;
@@ -334,7 +382,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
 }
 
 .statsPlayer01Slot01{
-    background-image: none;
+    background-image: url(../img/statsPlayer01Slot01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -351,7 +399,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer01Slot02
 }
 
 .statsPlayer01Slot02{
-    background-image: none;
+    background-image: url(../img/statsPlayer01Slot02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
