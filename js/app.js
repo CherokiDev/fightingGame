@@ -93,42 +93,42 @@ const selectPersonaje = (nombre, jugador) => {
     switch(nombre){
         case "goku":
             preSeleccion = pers1;
-            document.getElementById("namePlayer01").innerHTML = "Player 01 - Goku";
+            document.getElementById("namePlayer01").innerHTML = "Goku";
         break;
 
         case "gohan":
             preSeleccion = pers2;
-            document.getElementById("namePlayer01").innerHTML = "Player 01 - Gohan";
+            document.getElementById("namePlayer01").innerHTML = "Gohan";
         break;
 
         case "vegeta":
             preSeleccion = pers3;
-            document.getElementById("namePlayer01").innerHTML = "Player 01 - Vegeta";
+            document.getElementById("namePlayer01").innerHTML = "Vegeta";
         break;
 
         case "krillin":
             preSeleccion = pers4;
-            document.getElementById("namePlayer01").innerHTML = "Player 01 - Krillin";
+            document.getElementById("namePlayer01").innerHTML = "Krillin";
         break;
 
         case "freezer":
             preSeleccion = pers5;
-            document.getElementById("namePlayer02").innerHTML = "Player 02 - Freezer";
+            document.getElementById("namePlayer02").innerHTML = "Freezer";
         break;
 
         case "cell":
             preSeleccion = pers6;
-            document.getElementById("namePlayer02").innerHTML = "Player 02 - Cell";
+            document.getElementById("namePlayer02").innerHTML = "Cell";
         break;
 
         case "buu":
             preSeleccion = pers7;
-            document.getElementById("namePlayer02").innerHTML = "Player 02 - Majin Buu";
+            document.getElementById("namePlayer02").innerHTML = "Majin Buu";
         break;
 
         case "broly":
             preSeleccion = pers8;
-            document.getElementById("namePlayer02").innerHTML = "Player 02 - Broly";
+            document.getElementById("namePlayer02").innerHTML = "Broly";
         break;
 
     }
