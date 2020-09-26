@@ -15,10 +15,9 @@ class Personajes {
     botonAtaquePlayer01(){
         let diferenciaStatsBoton1 = player1seleccion.fuerza - player2seleccion.defensa;
         player2seleccion.vida -= diferenciaStatsBoton1
-        document.getElementById("screen03LifePlayer01").innerHTML = `La vida de ${player2seleccion.nombre} es ${player2seleccion.vida}`
+        document.getElementById("screen03LifePlayer02").innerHTML = `${player2seleccion.nombre}`
+        document.getElementById('screen03LifePlayer02').style.width = player2seleccion.vida + "%";
         
-
-
         if(player2seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
             document.getElementById('screen04').style.display = "block";
@@ -32,7 +31,9 @@ class Personajes {
     botonAtaquePlayer02(){
         let diferenciaStatsBoton2 = player2seleccion.fuerza - player1seleccion.defensa;
         player1seleccion.vida -= diferenciaStatsBoton2
-        document.getElementById("screen03LifePlayer02").innerHTML = `La vida ${player1seleccion.nombre} es de ${player1seleccion.vida}`
+        document.getElementById("screen03LifePlayer01").innerHTML = `${player1seleccion.nombre}`
+        document.getElementById('screen03LifePlayer01').style.width = player1seleccion.vida + "%";
+    
         if(player1seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
             document.getElementById('screen04').style.display = "block";

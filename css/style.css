@@ -546,8 +546,68 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     width: 100%;
     height: 15%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screen03ContainerLifePlayer01{
+    background-color: black;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 2em 0 0 2em;
+    margin-left: 1em;
+}
+
+.screen03LifePlayer01{
+    background-color: rgb(236, 16, 9);
+    width: 100%;
+    height: 100%;
+    border-radius: 2em 0em 0em 2em;
+    font-family: "Dragon Ball";
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 0.5em;
+    color: white;
+}
+
+.screen03Timer{
+    background-color: azure;
+    width: 10%;
+    height: 80%;
+    display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.screen03ContainerLifePlayer02{
+    background-color: black;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0em 2em 2em 0em;
+    margin-right: 1em;
+}
+
+.screen03LifePlayer02{
+    background-color: rgb(236, 16, 9);
+    width: 100%;
+    height: 100%;
+    border-radius: 0em 2em 2em 0em;
+    font-family: "Dragon Ball";
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.5em;
+    color: white;
 }
 
 .screen03Row02{
