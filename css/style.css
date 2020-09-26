@@ -647,6 +647,17 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     align-items: center;
 }
 
+.attackPlayer01{
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    background-image: url(../img/buttonAttackOn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
 .journal{
     background-color: lightcoral;
     width: 20%;
@@ -665,6 +676,16 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     align-items: center;
 }
 
+.attackPlayer02{
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    background-image: url(../img/buttonAttackOn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
 
 
 

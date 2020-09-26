@@ -71,6 +71,8 @@ const activeButtomPlayer02 = document.getElementById('attackPlayer02');
 activeButtomPlayer01.addEventListener('click', () => {
     if(activeButtomPlayer01.disabled = true){
         document.getElementById('attackPlayer02').disabled = false;
+        document.getElementById('attackPlayer01').style.backgroundImage = "url('../img/buttonAttackOff.png')";
+        document.getElementById('attackPlayer02').style.backgroundImage = "url('../img/buttonAttackOn.png')";
     }
 })
 
@@ -78,8 +80,9 @@ activeButtomPlayer01.addEventListener('click', () => {
 activeButtomPlayer02.addEventListener('click', () => {
     if(activeButtomPlayer02.disabled = true){
         document.getElementById('attackPlayer01').disabled = false;
+        document.getElementById('attackPlayer02').style.backgroundImage = "url('../img/buttonAttackOff.png')";
+        document.getElementById('attackPlayer01').style.backgroundImage = "url('../img/buttonAttackOn.png')";
     }
-    
 })
 
 
@@ -171,7 +174,7 @@ fight.addEventListener('click', () => {
     var downloadTimer = setInterval(function(){
         if(timeleft <= 0){
             clearInterval(downloadTimer);
-            document.getElementById("screen03Timer").innerHTML = "END";
+            document.getElementById("screen03Timer").innerHTML = "End";
         } else {
             document.getElementById("screen03Timer").innerHTML = timeleft;
           }
@@ -222,6 +225,7 @@ reset.addEventListener('click', () => {
  ---poner de fondo en la screen ultima la imagen del dragon shenron
  ---añadir efecto de super saiyan al slot al ser seleccionado o que ponga P1 con la imagen de fondo con opacity 50%
  ---cancion "disturbed - indestructible" (https://www.youtube.com/watch?v=L2QTtdeL3dE&list=RDEMww6ZEHgLhQ-8eu_x7Z-FJw&index=27) de fondo en las batallas
+ ---mejorar Readme.md
 
 */
 
