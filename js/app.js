@@ -164,6 +164,20 @@ fight.addEventListener('click', () => {
     }else if(!player2seleccion){
         document.getElementById("namePlayer02").innerHTML = "Select Player";
     }
+
+
+    // Countdown
+    var timeleft = 99;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            document.getElementById("screen03Timer").innerHTML = "Finished";
+        } else {
+            document.getElementById("screen03Timer").innerHTML = timeleft;
+          }
+        timeleft -= 1;
+        }, 1000);
+
     
 })
 
@@ -174,10 +188,11 @@ fight.addEventListener('click', () => {
 //Guardo reset en una constante
 const reset = document.getElementById('reset');
 
-//Construyo el evento que cambia de la pantalla 01 a la pantalla 02
+//Construyo el evento que cambia de la pantalla 04 a la pantalla 01
 reset.addEventListener('click', () => {
     window.location.reload();
 })
+
 
 
 
