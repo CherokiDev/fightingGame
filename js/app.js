@@ -4,19 +4,23 @@
 
 // Creación de clases
 class Personajes {
-    constructor(nombre, vida, fuerza, defensa){
+    constructor(nombre, vida, fuerza, defensa, imagenAtacando, imagenDefensa){
         this.nombre = nombre;
         this.vida = vida;
         this.fuerza = fuerza;
         this.defensa = defensa;
+        this.imagenAtacando = imagenAtacando;
+        this.imagenDefensa =imagenDefensa;
     }
 
     // Función que realiza el ataque del pj1 al pj2
     botonAtaquePlayer01(){
         let diferenciaStatsBoton1 = player1seleccion.fuerza - player2seleccion.defensa;
         player2seleccion.vida -= diferenciaStatsBoton1
-        document.getElementById("screen03LifePlayer02").innerHTML = `${player2seleccion.nombre}`
         document.getElementById('screen03LifePlayer02').style.width = player2seleccion.vida + "%";
+        document.getElementById('screen03Player01Zone').style.backgroundImage = player1seleccion.imagenAtacando;
+        document.getElementById('screen03Player02Zone').style.backgroundImage = player2seleccion.imagenDefensa;
+
         
         if(player2seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
@@ -31,8 +35,9 @@ class Personajes {
     botonAtaquePlayer02(){
         let diferenciaStatsBoton2 = player2seleccion.fuerza - player1seleccion.defensa;
         player1seleccion.vida -= diferenciaStatsBoton2
-        document.getElementById("screen03LifePlayer01").innerHTML = `${player1seleccion.nombre}`
         document.getElementById('screen03LifePlayer01').style.width = player1seleccion.vida + "%";
+        document.getElementById('screen03Player02Zone').style.backgroundImage = player2seleccion.imagenAtacando;
+        document.getElementById('screen03Player01Zone').style.backgroundImage = player1seleccion.imagenDefensa;
     
         if(player1seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
@@ -46,14 +51,14 @@ class Personajes {
 
 
 // Creación de personajes
-const pers1 = new Personajes("Son Goku",100,90,60);
-const pers2 = new Personajes("Son Gohan",100,80,75);
-const pers3 = new Personajes("Vegeta",100,80,60);
-const pers4 = new Personajes("Krillin", 100,80,50,);
-const pers5 = new Personajes("Freezer", 100,85,75,);
-const pers6 = new Personajes("Cell",100,95,70);
-const pers7 = new Personajes("Majin Buu",100,85,55);
-const pers8 = new Personajes("Broly", 100,95,75);
+const pers1 = new Personajes("Son Goku",100,90,60, "url(../img/fighting/gokuAttack01.gif)", "url(../img/fighting/gokuDefense01.gif)");
+const pers2 = new Personajes("Son Gohan",100,80,75, "url(../img/fighting/gohanAttack01.gif)", "url(../img/fighting/gohanDefense01.gif)");
+const pers3 = new Personajes("Vegeta",100,80,60, "url(../img/fighting/vegetaAttack01.gif)", "url(../img/fighting/vegetaDefense01.gif)");
+const pers4 = new Personajes("Krillin", 100,80,50, "url(../img/fighting/krillinAttack01.gif)", "url(../img/fighting/krillinDefense01.gif)");
+const pers5 = new Personajes("Freezer", 100,85,75, "url(../img/fighting/freezerAttack01.gif)", "url(../img/fighting/freezerDefense01.gif)");
+const pers6 = new Personajes("Cell",100,95,70, "url(../img/fighting/cellAttack01.gif)", "url(../img/fighting/cellDefense01.gif)");
+const pers7 = new Personajes("Majin Buu",100,85,55, "url(../img/fighting/majinBuuAttack01.gif)", "url(../img/fighting/majinBuuDefense01.gif)");
+const pers8 = new Personajes("Broly", 100,95,75, "url(../img/fighting/brolyAttack01.gif)", "url(../img/fighting/brolyDefense01.gif)");
 
 
 
@@ -98,42 +103,49 @@ const selectPersonaje = (nombre, jugador) => {
         case "goku":
             preSeleccion = pers1;
             document.getElementById("namePlayer01").innerHTML = "Son Goku";
-
+            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(../img/fighting/gokuStart01.gif)";
         break;
 
         case "gohan":
             preSeleccion = pers2;
             document.getElementById("namePlayer01").innerHTML = "son Gohan";
+            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(../img/fighting/gohanStart01.gif)";
         break;
 
         case "vegeta":
             preSeleccion = pers3;
             document.getElementById("namePlayer01").innerHTML = "Vegeta";
+            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(../img/fighting/vegetaStart01.gif)";
         break;
 
         case "krillin":
             preSeleccion = pers4;
             document.getElementById("namePlayer01").innerHTML = "Krillin";
+            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(../img/fighting/krillinStart01.gif)";
         break;
 
         case "freezer":
             preSeleccion = pers5;
             document.getElementById("namePlayer02").innerHTML = "Freezer";
+            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(../img/fighting/freezerStart01.gif)";
         break;
 
         case "cell":
             preSeleccion = pers6;
             document.getElementById("namePlayer02").innerHTML = "Cell";
+            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(../img/fighting/cellStart01.gif)";
         break;
 
         case "buu":
             preSeleccion = pers7;
             document.getElementById("namePlayer02").innerHTML = "Majin Buu";
+            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(../img/fighting/majinBuuStart01.gif)";
         break;
 
         case "broly":
             preSeleccion = pers8;
             document.getElementById("namePlayer02").innerHTML = "Broly";
+            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(../img/fighting/brolyStart01.gif)";
         break;
 
     }
@@ -160,6 +172,8 @@ fight.addEventListener('click', () => {
     if (player1seleccion && player2seleccion){
         document.getElementById('screen02').style.display = "none";
         document.getElementById('screen03').style.display = "block";
+        document.getElementById("screen03LifePlayer01").innerHTML = `${player1seleccion.nombre}`
+        document.getElementById("screen03LifePlayer02").innerHTML = `${player2seleccion.nombre}`
 
         // Countdown
         let timeleft = 99;
