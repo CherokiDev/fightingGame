@@ -25,7 +25,7 @@ class Personajes {
         if(player2seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
             document.getElementById('screen04').style.display = "block";
-            document.getElementById('player01Win').innerHTML = (`Ha vencido el jugador ${player1seleccion.nombre}`)
+            document.getElementById("player01Win").innerHTML = `Ha vencido el jugador ${player1seleccion.nombre}`;
 
         }
     return;
@@ -42,7 +42,7 @@ class Personajes {
         if(player1seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
             document.getElementById('screen04').style.display = "block";
-            document.getElementById('player02Win').innerHTML = (`Ha vencido el jugador ${player2seleccion.nombre}`)
+            document.getElementById("player02Win").innerHTML = `Ha vencido el jugador ${player2seleccion.nombre}`;
         }
     return;
     }
@@ -160,7 +160,7 @@ const selectPersonaje = (nombre, jugador) => {
 
 
 
-    console.log(player1seleccion, player2seleccion)/* lo tengo que borrar */
+    /*console.log(player1seleccion, player2seleccion) lo tengo que borrar */
 }
 
 

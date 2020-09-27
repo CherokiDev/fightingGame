@@ -709,14 +709,62 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 
 /*ESTILOS PANTALLA 04*/
 .screen04{
-    background-color: rgb(60, 141, 165);
+    background-image: url(../img/backgroundScreen04.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+.theEnd{
+    height: 65%;
+    font-family: "Dragon Ball";
+    font-size: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 232, 0);
+}
+
+.player01Win{
+    font-family: "Dragon Ball";
+    font-size: 5vw;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: black;
+}
+
+.player02Win{
+    font-family: "Dragon Ball";
+    font-size: 5vw;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: black;
+}
+
+.divReset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.reset{
+    font-family: "Dragon Ball";
+    font-size: 3vw;
+    color: white;
+    border-radius: 1em;
+    background-color:black;
+    padding: 0.5em;
+    cursor: pointer;
 }
