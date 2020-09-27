@@ -1,7 +1,3 @@
-//VOY A IR ESCRIBIENDO LAS VARIABLES EN ESPAÑOL, Y LAS LLAMADAS
-//AL HTML EN INGLES, PARA ASÍ GUIARME POR DONDE VOY
-
-
 // Creación de clases
 class Personajes {
     constructor(nombre, vida, fuerza, defensa, imagenAtacando, imagenDefensa){
@@ -51,18 +47,18 @@ class Personajes {
 
 
 // Creación de personajes
-const pers1 = new Personajes("Son Goku",100,95,75, "url(../img/fighting/gokuAttack01.gif)", "url(../img/fighting/gokuDefense01.gif)");
-const pers2 = new Personajes("Son Gohan",100,90,70, "url(../img/fighting/gohanAttack01.gif)", "url(../img/fighting/gohanDefense01.gif)");
-const pers3 = new Personajes("Vegeta",100,85,65, "url(../img/fighting/vegetaAttack01.gif)", "url(../img/fighting/vegetaDefense01.gif)");
-const pers4 = new Personajes("Krillin", 100,80,50, "url(../img/fighting/krillinAttack01.gif)", "url(../img/fighting/krillinDefense01.gif)");
-const pers5 = new Personajes("Freezer", 100,80,65, "url(../img/fighting/freezerAttack01.gif)", "url(../img/fighting/freezerDefense01.gif)");
-const pers6 = new Personajes("Cell",100,90,70, "url(../img/fighting/cellAttack01.gif)", "url(../img/fighting/cellDefense01.gif)");
-const pers7 = new Personajes("Majin Buu",100,85,55, "url(../img/fighting/majinBuuAttack01.gif)", "url(../img/fighting/majinBuuDefense01.gif)");
-const pers8 = new Personajes("Broly", 100,95,70, "url(../img/fighting/brolyAttack01.gif)", "url(../img/fighting/brolyDefense01.gif)");
+const pers1 = new Personajes("Son Goku",100,95,75, "url(img/fighting/gokuAttack01.gif)", "url(img/fighting/gokuDefense01.gif)");
+const pers2 = new Personajes("Son Gohan",100,90,70, "url(img/fighting/gohanAttack01.gif)", "url(img/fighting/gohanDefense01.gif)");
+const pers3 = new Personajes("Vegeta",100,85,65, "url(img/fighting/vegetaAttack01.gif)", "url(img/fighting/vegetaDefense01.gif)");
+const pers4 = new Personajes("Krillin", 100,80,50, "url(img/fighting/krillinAttack01.gif)", "url(img/fighting/krillinDefense01.gif)");
+const pers5 = new Personajes("Freezer", 100,80,65, "url(img/fighting/freezerAttack01.gif)", "url(img/fighting/freezerDefense01.gif)");
+const pers6 = new Personajes("Cell",100,90,70, "url(img/fighting/cellAttack01.gif)", "url(img/fighting/cellDefense01.gif)");
+const pers7 = new Personajes("Majin Buu",100,85,55, "url(img/fighting/majinBuuAttack01.gif)", "url(img/fighting/majinBuuDefense01.gif)");
+const pers8 = new Personajes("Broly", 100,95,70, "url(img/fighting/brolyAttack01.gif)", "url(img/fighting/brolyDefense01.gif)");
 
 
 
-// Variables para asignar luego los personajes a sus respectivos players
+// Variables para asignar los personajes a sus respectivos players
 let player1seleccion;
 let player2seleccion;
 
@@ -76,8 +72,8 @@ const activeButtomPlayer02 = document.getElementById('attackPlayer02');
 activeButtomPlayer01.addEventListener('click', () => {
     if(activeButtomPlayer01.disabled = true){
         document.getElementById('attackPlayer02').disabled = false;
-        document.getElementById('attackPlayer01').style.backgroundImage = "url('../img/buttonAttackOff.png')";
-        document.getElementById('attackPlayer02').style.backgroundImage = "url('../img/buttonAttackOn.png')";
+        document.getElementById('attackPlayer01').style.backgroundImage = "url('img/buttonAttackOff.png')";
+        document.getElementById('attackPlayer02').style.backgroundImage = "url('img/buttonAttackOn.png')";
     }
 })
 
@@ -85,8 +81,8 @@ activeButtomPlayer01.addEventListener('click', () => {
 activeButtomPlayer02.addEventListener('click', () => {
     if(activeButtomPlayer02.disabled = true){
         document.getElementById('attackPlayer01').disabled = false;
-        document.getElementById('attackPlayer02').style.backgroundImage = "url('../img/buttonAttackOff.png')";
-        document.getElementById('attackPlayer01').style.backgroundImage = "url('../img/buttonAttackOn.png')";
+        document.getElementById('attackPlayer02').style.backgroundImage = "url('img/buttonAttackOff.png')";
+        document.getElementById('attackPlayer01').style.backgroundImage = "url('img/buttonAttackOn.png')";
     }
 })
 
@@ -103,49 +99,49 @@ const selectPersonaje = (nombre, jugador) => {
         case "goku":
             preSeleccion = pers1;
             document.getElementById("namePlayer01").innerHTML = "Son Goku";
-            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(../img/fighting/gokuStart01.gif)";
+            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(img/fighting/gokuStart01.gif)";
         break;
 
         case "gohan":
             preSeleccion = pers2;
             document.getElementById("namePlayer01").innerHTML = "son Gohan";
-            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(../img/fighting/gohanStart01.gif)";
+            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(img/fighting/gohanStart01.gif)";
         break;
 
         case "vegeta":
             preSeleccion = pers3;
             document.getElementById("namePlayer01").innerHTML = "Vegeta";
-            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(../img/fighting/vegetaStart01.gif)";
+            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(img/fighting/vegetaStart01.gif)";
         break;
 
         case "krillin":
             preSeleccion = pers4;
             document.getElementById("namePlayer01").innerHTML = "Krillin";
-            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(../img/fighting/krillinStart01.gif)";
+            document.getElementById('screen03Player01Zone').style.backgroundImage = "url(img/fighting/krillinStart01.gif)";
         break;
 
         case "freezer":
             preSeleccion = pers5;
             document.getElementById("namePlayer02").innerHTML = "Freezer";
-            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(../img/fighting/freezerStart01.gif)";
+            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(img/fighting/freezerStart01.gif)";
         break;
 
         case "cell":
             preSeleccion = pers6;
             document.getElementById("namePlayer02").innerHTML = "Cell";
-            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(../img/fighting/cellStart01.gif)";
+            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(img/fighting/cellStart01.gif)";
         break;
 
         case "buu":
             preSeleccion = pers7;
             document.getElementById("namePlayer02").innerHTML = "Majin Buu";
-            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(../img/fighting/majinBuuStart01.gif)";
+            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(img/fighting/majinBuuStart01.gif)";
         break;
 
         case "broly":
             preSeleccion = pers8;
             document.getElementById("namePlayer02").innerHTML = "Broly";
-            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(../img/fighting/brolyStart01.gif)";
+            document.getElementById('screen03Player02Zone').style.backgroundImage = "url(img/fighting/brolyStart01.gif)";
         break;
 
     }
@@ -157,12 +153,7 @@ const selectPersonaje = (nombre, jugador) => {
     }else{
         player2seleccion = preSeleccion;
     }
-
-
-
-    /*console.log(player1seleccion, player2seleccion) lo tengo que borrar */
 }
-
 
 //Guardo fightRow04 en una constante
 const fight = document.getElementById('fightRow04');
@@ -188,15 +179,15 @@ fight.addEventListener('click', () => {
             }, 1000);
 
         let random = Math.floor(Math.random() * 9) + 0;
-        let bigSize = ["url('../img/scenes/scene01.jpg')",
-                        "url('../img/scenes/scene02.jpg')" ,
-                        "url('../img/scenes/scene03.png')",
-                        "url('../img/scenes/scene04.png')",
-                        "url('../img/scenes/scene05.jpg')",
-                        "url('../img/scenes/scene06.png')",
-                        "url('../img/scenes/scene07.jpg')",
-                        "url('../img/scenes/scene08.jpg')",
-                        "url('../img/scenes/scene09.jpg')"];
+        let bigSize = ["url('img/scenes/scene01.jpg')",
+                        "url('img/scenes/scene02.jpg')",
+                        "url('img/scenes/scene03.png')",
+                        "url('img/scenes/scene04.png')",
+                        "url('img/scenes/scene05.jpg')",
+                        "url('img/scenes/scene06.png')",
+                        "url('img/scenes/scene07.jpg')",
+                        "url('img/scenes/scene08.jpg')",
+                        "url('img/scenes/scene09.jpg')"];
         document.getElementById("screen03").style.backgroundImage=bigSize[random];
               
         
@@ -206,17 +197,8 @@ fight.addEventListener('click', () => {
 
     }else if(!player2seleccion){
         document.getElementById("namePlayer02").innerHTML = "Select Player!";
-    }
-
-
-    
-
-    
+    }  
 })
-
-
-
-
 
 //Guardo reset en una constante
 const reset = document.getElementById('reset');
