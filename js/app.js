@@ -51,14 +51,14 @@ class Personajes {
 
 
 // Creación de personajes
-const pers1 = new Personajes("Son Goku",100,90,60, "url(../img/fighting/gokuAttack01.gif)", "url(../img/fighting/gokuDefense01.gif)");
-const pers2 = new Personajes("Son Gohan",100,80,75, "url(../img/fighting/gohanAttack01.gif)", "url(../img/fighting/gohanDefense01.gif)");
-const pers3 = new Personajes("Vegeta",100,80,60, "url(../img/fighting/vegetaAttack01.gif)", "url(../img/fighting/vegetaDefense01.gif)");
+const pers1 = new Personajes("Son Goku",100,95,75, "url(../img/fighting/gokuAttack01.gif)", "url(../img/fighting/gokuDefense01.gif)");
+const pers2 = new Personajes("Son Gohan",100,90,70, "url(../img/fighting/gohanAttack01.gif)", "url(../img/fighting/gohanDefense01.gif)");
+const pers3 = new Personajes("Vegeta",100,85,65, "url(../img/fighting/vegetaAttack01.gif)", "url(../img/fighting/vegetaDefense01.gif)");
 const pers4 = new Personajes("Krillin", 100,80,50, "url(../img/fighting/krillinAttack01.gif)", "url(../img/fighting/krillinDefense01.gif)");
-const pers5 = new Personajes("Freezer", 100,85,75, "url(../img/fighting/freezerAttack01.gif)", "url(../img/fighting/freezerDefense01.gif)");
-const pers6 = new Personajes("Cell",100,95,70, "url(../img/fighting/cellAttack01.gif)", "url(../img/fighting/cellDefense01.gif)");
+const pers5 = new Personajes("Freezer", 100,80,65, "url(../img/fighting/freezerAttack01.gif)", "url(../img/fighting/freezerDefense01.gif)");
+const pers6 = new Personajes("Cell",100,90,70, "url(../img/fighting/cellAttack01.gif)", "url(../img/fighting/cellDefense01.gif)");
 const pers7 = new Personajes("Majin Buu",100,85,55, "url(../img/fighting/majinBuuAttack01.gif)", "url(../img/fighting/majinBuuDefense01.gif)");
-const pers8 = new Personajes("Broly", 100,95,75, "url(../img/fighting/brolyAttack01.gif)", "url(../img/fighting/brolyDefense01.gif)");
+const pers8 = new Personajes("Broly", 100,95,70, "url(../img/fighting/brolyAttack01.gif)", "url(../img/fighting/brolyDefense01.gif)");
 
 
 
