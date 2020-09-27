@@ -16,6 +16,7 @@ class Personajes {
         document.getElementById('screen03LifePlayer02').style.width = player2seleccion.vida + "%";
         document.getElementById('screen03Player01Zone').style.backgroundImage = player1seleccion.imagenAtacando;
         document.getElementById('screen03Player02Zone').style.backgroundImage = player2seleccion.imagenDefensa;
+        document.getElementById('journal').innerHTML = `El jugador ${player2seleccion.nombre} ha recibido ${diferenciaStatsBoton1} de daño.`
 
         
         if(player2seleccion.vida <= 0){
@@ -34,6 +35,7 @@ class Personajes {
         document.getElementById('screen03LifePlayer01').style.width = player1seleccion.vida + "%";
         document.getElementById('screen03Player02Zone').style.backgroundImage = player2seleccion.imagenAtacando;
         document.getElementById('screen03Player01Zone').style.backgroundImage = player1seleccion.imagenDefensa;
+        document.getElementById('journal').innerHTML = `El jugador ${player1seleccion.nombre} ha recibido ${diferenciaStatsBoton2} de daño.`
     
         if(player1seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
@@ -208,52 +210,6 @@ reset.addEventListener('click', () => {
     window.location.reload();
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- FALTA POR HACER
- ---añadir imágenes al hacer clic en el jugador
-    o bien    ---pintar "seleccionado" o un background-color sobre el slot del jugador
- ---añadir posibilidad de tomar una cura (habichuela mágica)
- ---añadir setTimeOut para pasar a la lucha
- ---añadir setTimeOut a la primera pantalla como si estuviera cargando la consola
- ---intentar mejorar el código
- ---ordenar el código
- ---poner de fondo en la screen ultima la imagen del dragon shenron
- ---añadir efecto de super saiyan al slot al ser seleccionado o que ponga P1 con la imagen de fondo con opacity 50%
- ---cancion "disturbed - indestructible" (https://www.youtube.com/watch?v=L2QTtdeL3dE&list=RDEMww6ZEHgLhQ-8eu_x7Z-FJw&index=27) de fondo en las batallas
- ---mejorar Readme.md
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Guardo buttonScreen01 en una constante
 const boton01Pantalla01 = document.getElementById('button01Screen01');
 
@@ -262,7 +218,6 @@ boton01Pantalla01.addEventListener('click', () => {
     document.getElementById('screen01').style.display = "none";
     document.getElementById('screen02').style.display = "block";
 })
-
 
 //Guardo gridPlayer01Slot01 en una constante
 const gridJugador01Casilla01 = document.getElementById('gridPlayer01Slot01');
@@ -285,7 +240,6 @@ gridJugador01Casilla01.addEventListener('mouseleave', () => {
     document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot01')
 })
 
-
 //Guardo gridPlayer01Slot02 en una constante
 const gridJugador01Casilla02 = document.getElementById('gridPlayer01Slot02');
 
@@ -306,7 +260,6 @@ gridJugador01Casilla02.addEventListener('mouseleave', () => {
     document.getElementById('imgPlayer01').classList.remove('imgPlayer01Slot02')
     document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot02')
 })
-
 
 //Guardo gridPlayer01Slot03 en una constante
 const gridJugador01Casilla03 = document.getElementById('gridPlayer01Slot03');
@@ -329,7 +282,6 @@ gridJugador01Casilla03.addEventListener('mouseleave', () => {
     document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot03')
 })
 
-
 //Guardo gridPlayer01Slot04 en una constante
 const gridJugador01Casilla04 = document.getElementById('gridPlayer01Slot04');
 
@@ -350,7 +302,6 @@ gridJugador01Casilla04.addEventListener('mouseleave', () => {
     document.getElementById('imgPlayer01').classList.remove('imgPlayer01Slot04')
     document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot04')
 })
-
 
 //Guardo gridPlayer02Slot01 en una constante
 const gridJugador02Casilla01 = document.getElementById('gridPlayer02Slot01');
@@ -373,7 +324,6 @@ gridJugador02Casilla01.addEventListener('mouseleave', () => {
     document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot01')
 })
 
-
 //Guardo gridPlayer02Slot02 en una constante
 const gridJugador02Casilla02 = document.getElementById('gridPlayer02Slot02');
 
@@ -394,7 +344,6 @@ gridJugador02Casilla02.addEventListener('mouseleave', () => {
     document.getElementById('imgPlayer02').classList.remove('imgPlayer02Slot02')
     document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot02')
 })
-
 
 //Guardo gridPlayer02Slot03 en una constante
 const gridJugador02Casilla03 = document.getElementById('gridPlayer02Slot03');
@@ -417,7 +366,6 @@ gridJugador02Casilla03.addEventListener('mouseleave', () => {
     document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot03')
 })
 
-
 //Guardo gridPlayer02Slot04 en una constante
 const gridJugador02Casilla04 = document.getElementById('gridPlayer02Slot04');
 
@@ -438,4 +386,3 @@ gridJugador02Casilla04.addEventListener('mouseleave', () => {
     document.getElementById('imgPlayer02').classList.remove('imgPlayer02Slot04')
     document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot04')
 })
-
