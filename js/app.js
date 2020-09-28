@@ -142,7 +142,6 @@ const fight = document.getElementById('fightRow04');
 //Construyo el evento que cambia de la pantalla 02 a la pantalla 03
 fight.addEventListener('click', () => {
     if (player1seleccion && player2seleccion){
-        console.log(player1seleccion)
         document.getElementById('screen02').style.display = "none";
         document.getElementById('screen03').style.display = "block";
         document.getElementById("screen03LifePlayer01").innerHTML = `${player1seleccion.nombre}`
