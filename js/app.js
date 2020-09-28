@@ -219,170 +219,29 @@ boton01Pantalla01.addEventListener('click', () => {
     document.getElementById('screen02').style.display = "block";
 })
 
-//Guardo gridPlayer01Slot01 en una constante
-const gridJugador01Casilla01 = document.getElementById('gridPlayer01Slot01');
+//Función para cambiar de imagen y stats al pasar el mouse por encima del slot del jugador
+const animacionParrillaPlayer = (gridPlayer,imgPlayer,imgPlayerSlot,statsPlayer,statsPlayerSlot,pers) => {
+    document.getElementById(gridPlayer).addEventListener('mouseenter', () =>{
+        document.getElementById(imgPlayer).classList.add(imgPlayerSlot);
+        document.getElementById(statsPlayer).classList.add(statsPlayerSlot);
+        document.getElementById(statsPlayer).innerHTML = 
+        `
+        Vida: ${pers.vida}<br>
+        Fuerza: ${pers.fuerza}<br>
+        Defensa: ${pers.defensa}
+        `
+    })
+    document.getElementById(gridPlayer).addEventListener('mouseleave', () => {
+        document.getElementById(imgPlayer).classList.remove(imgPlayerSlot)
+        document.getElementById(statsPlayer).classList.remove(statsPlayerSlot)
+    })
+}
 
-//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer01Slot01
-gridJugador01Casilla01.addEventListener('mouseenter', () => {
-    document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot01');
-    document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot01');
-    document.getElementById('statsPlayer01').innerHTML = 
-    `
-    Vida: ${pers1.vida}<br>
-    Fuerza: ${pers1.fuerza}<br>
-    Defensa: ${pers1.defensa}
-    `
-})
-
-//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
-gridJugador01Casilla01.addEventListener('mouseleave', () => {
-    document.getElementById('imgPlayer01').classList.remove('imgPlayer01Slot01')
-    document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot01')
-})
-
-//Guardo gridPlayer01Slot02 en una constante
-const gridJugador01Casilla02 = document.getElementById('gridPlayer01Slot02');
-
-//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer01Slot02
-gridJugador01Casilla02.addEventListener('mouseenter', () => {
-    document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot02');
-    document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot02');
-    document.getElementById('statsPlayer01').innerHTML = 
-    `
-    Vida: ${pers2.vida}<br>
-    Fuerza: ${pers2.fuerza}<br>
-    Defensa: ${pers2.defensa}
-    `
-})
-
-//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
-gridJugador01Casilla02.addEventListener('mouseleave', () => {
-    document.getElementById('imgPlayer01').classList.remove('imgPlayer01Slot02')
-    document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot02')
-})
-
-//Guardo gridPlayer01Slot03 en una constante
-const gridJugador01Casilla03 = document.getElementById('gridPlayer01Slot03');
-
-//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer01Slot03
-gridJugador01Casilla03.addEventListener('mouseenter', () => {
-    document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot03');
-    document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot03');
-    document.getElementById('statsPlayer01').innerHTML =
-    `
-    Vida: ${pers3.vida}<br>
-    Fuerza: ${pers3.fuerza}<br>
-    Defensa: ${pers3.defensa}
-    `
-})
-
-//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
-gridJugador01Casilla03.addEventListener('mouseleave', () => {
-    document.getElementById('imgPlayer01').classList.remove('imgPlayer01Slot03')
-    document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot03')
-})
-
-//Guardo gridPlayer01Slot04 en una constante
-const gridJugador01Casilla04 = document.getElementById('gridPlayer01Slot04');
-
-//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer01Slot04
-gridJugador01Casilla04.addEventListener('mouseenter', () => {
-    document.getElementById('imgPlayer01').classList.add('imgPlayer01Slot04');
-    document.getElementById('statsPlayer01').classList.add('statsPlayer01Slot04');
-    document.getElementById('statsPlayer01').innerHTML =
-    `
-    Vida: ${pers4.vida}<br>
-    Fuerza: ${pers4.fuerza}<br>
-    Defensa: ${pers4.defensa}
-    `
-})
-
-//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
-gridJugador01Casilla04.addEventListener('mouseleave', () => {
-    document.getElementById('imgPlayer01').classList.remove('imgPlayer01Slot04')
-    document.getElementById('statsPlayer01').classList.remove('statsPlayer01Slot04')
-})
-
-//Guardo gridPlayer02Slot01 en una constante
-const gridJugador02Casilla01 = document.getElementById('gridPlayer02Slot01');
-
-//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer02Slot01
-gridJugador02Casilla01.addEventListener('mouseenter', () => {
-    document.getElementById('imgPlayer02').classList.add('imgPlayer02Slot01');
-    document.getElementById('statsPlayer02').classList.add('statsPlayer02Slot01');
-    document.getElementById('statsPlayer02').innerHTML =
-    `
-    Vida: ${pers5.vida}<br>
-    Fuerza: ${pers5.fuerza}<br>
-    Defensa: ${pers5.defensa}
-    `
-})
-
-//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
-gridJugador02Casilla01.addEventListener('mouseleave', () => {
-    document.getElementById('imgPlayer02').classList.remove('imgPlayer02Slot01')
-    document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot01')
-})
-
-//Guardo gridPlayer02Slot02 en una constante
-const gridJugador02Casilla02 = document.getElementById('gridPlayer02Slot02');
-
-//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer02Slot02
-gridJugador02Casilla02.addEventListener('mouseenter', () => {
-    document.getElementById('imgPlayer02').classList.add('imgPlayer02Slot02');
-    document.getElementById('statsPlayer02').classList.add('statsPlayer02Slot02');
-    document.getElementById('statsPlayer02').innerHTML =
-    `
-    Vida: ${pers6.vida}<br>
-    Fuerza: ${pers6.fuerza}<br>
-    Defensa: ${pers6.defensa}
-    `
-})
-
-//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
-gridJugador02Casilla02.addEventListener('mouseleave', () => {
-    document.getElementById('imgPlayer02').classList.remove('imgPlayer02Slot02')
-    document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot02')
-})
-
-//Guardo gridPlayer02Slot03 en una constante
-const gridJugador02Casilla03 = document.getElementById('gridPlayer02Slot03');
-
-//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer02Slot03
-gridJugador02Casilla03.addEventListener('mouseenter', () => {
-    document.getElementById('imgPlayer02').classList.add('imgPlayer02Slot03');
-    document.getElementById('statsPlayer02').classList.add('statsPlayer02Slot03');
-    document.getElementById('statsPlayer02').innerHTML =
-    `
-    Vida: ${pers7.vida}<br>
-    Fuerza: ${pers7.fuerza}<br>
-    Defensa: ${pers7.defensa}
-    `
-})
-
-//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
-gridJugador02Casilla03.addEventListener('mouseleave', () => {
-    document.getElementById('imgPlayer02').classList.remove('imgPlayer02Slot03')
-    document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot03')
-})
-
-//Guardo gridPlayer02Slot04 en una constante
-const gridJugador02Casilla04 = document.getElementById('gridPlayer02Slot04');
-
-//Construyo los eventos que tienen lugar al pasar el mouse por encima de gridPlayer02Slot04
-gridJugador02Casilla04.addEventListener('mouseenter', () => {
-    document.getElementById('imgPlayer02').classList.add('imgPlayer02Slot04');
-    document.getElementById('statsPlayer02').classList.add('statsPlayer02Slot04');
-    document.getElementById('statsPlayer02').innerHTML =
-    `
-    Vida: ${pers8.vida}<br>
-    Fuerza: ${pers8.fuerza}<br>
-    Defensa: ${pers8.defensa}
-    `
-})
-
-//y estos eventos devuelven todo a su estado original al quitar el mouse de encima
-gridJugador02Casilla04.addEventListener('mouseleave', () => {
-    document.getElementById('imgPlayer02').classList.remove('imgPlayer02Slot04')
-    document.getElementById('statsPlayer02').classList.remove('statsPlayer02Slot04')
-})
+let goku = animacionParrillaPlayer('gridPlayer01Slot01','imgPlayer01','imgPlayer01Slot01','statsPlayer01','statsPlayer01Slot01',pers1);
+let gohan = animacionParrillaPlayer('gridPlayer01Slot02','imgPlayer01','imgPlayer01Slot02','statsPlayer01','statsPlayer01Slot02',pers2);
+let vegeta = animacionParrillaPlayer('gridPlayer01Slot03','imgPlayer01','imgPlayer01Slot03','statsPlayer01','statsPlayer01Slot03',pers3);
+let krillin = animacionParrillaPlayer('gridPlayer01Slot04','imgPlayer01','imgPlayer01Slot04','statsPlayer01','statsPlayer01Slot04',pers4);
+let freezer = animacionParrillaPlayer('gridPlayer02Slot01','imgPlayer02','imgPlayer02Slot01','statsPlayer02','statsPlayer02Slot01',pers5);
+let cell = animacionParrillaPlayer('gridPlayer02Slot02','imgPlayer02','imgPlayer02Slot02','statsPlayer02','statsPlayer02Slot02',pers6);
+let majinBuu = animacionParrillaPlayer('gridPlayer02Slot03','imgPlayer02','imgPlayer02Slot03','statsPlayer02','statsPlayer02Slot03',pers7);
+let broly = animacionParrillaPlayer('gridPlayer02Slot04','imgPlayer02','imgPlayer02Slot04','statsPlayer02','statsPlayer02Slot04',pers8);
