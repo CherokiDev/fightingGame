@@ -28,7 +28,6 @@ html, body {
     height: 100%;/*modificar para cambiar alto total de todo*/
 }
 
-
 /*ESTILOS PANTALLA 01*/
 .screen01{
     background-color: rgb(0, 0, 0);
@@ -63,17 +62,12 @@ html, body {
     }
 }
 
-
 /*ESTILOS PANTALLA 02*/
 .screen02{
     background-color: rgb(165, 62, 37);
     width: 100%;
     height: 100%;
     display: none;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;*/
 }
 
 /*Aquí comienza la fila 01*/
@@ -86,7 +80,7 @@ html, body {
     justify-content: center;
 }
 
-.namePlayer01{
+.namePlayer01, .namePlayer02{
     background-color: rgb(0, 0, 0);
     height: 90%;
     width: 38%;
@@ -113,19 +107,6 @@ html, body {
     box-shadow: inset 0em 0em 1em 0.7em;
 }
 
-.namePlayer02{
-    background-color: rgb(0, 0, 0);
-    height: 90%;
-    width: 38%;
-    margin: 0% 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Dragon Ball";
-    font-size: 5vw;
-    color: rgb(248, 91, 26);
-}
-
 /*Aquí comienza la fila 02*/
 .containerRow02{
     background-color: rgb(0, 0, 0);
@@ -136,7 +117,7 @@ html, body {
     justify-content: center;
 }
 
-.imgPlayer01{
+.imgPlayer01, .imgPlayer02{
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,20 +144,6 @@ html, body {
     justify-content: center;
 }
 
-.imgPlayer02{
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 90%;
-    width: 38%;
-    margin: 0% 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 0em 0em 1em 1em ;
-}
-
 /*Aquí comienza la fila 03*/
 .containerRow03{
     background-color: rgb(0, 0, 0);
@@ -187,7 +154,7 @@ html, body {
     justify-content: center;
 }
 
-.gridPlayer01{
+.gridPlayer01, .gridPlayer02{
     background-color: rgb(0, 0, 0);
     height: 90%;
     width: 38%;
@@ -197,7 +164,8 @@ html, body {
     justify-content: space-evenly;
 }
 
-.gridPlayer01Slot01{
+.gridPlayer01Slot01, .gridPlayer01Slot02, .gridPlayer01Slot03, .gridPlayer01Slot04, 
+.gridPlayer02Slot01, .gridPlayer02Slot02, .gridPlayer02Slot03, .gridPlayer02Slot04{
     background-image: url(../img/slotGoku.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -214,47 +182,14 @@ html, body {
 
 .gridPlayer01Slot02{
     background-image: url(../img/slotGohan.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    border-radius: 1em;
-    border: 0.3em solid rgb(138, 146, 148);
-    height: 95%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .gridPlayer01Slot03{
     background-image: url(../img/slotVegeta.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    border-radius: 1em;
-    border: 0.3em solid rgb(138, 146, 148);
-    height: 95%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .gridPlayer01Slot04{
     background-image: url(../img/slotKrillin.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    border-radius: 1em;
-    border: 0.3em solid rgb(138, 146, 148);
-    height: 95%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .emptyRow03{
@@ -264,74 +199,20 @@ html, body {
     margin: 0;
 }
 
-.gridPlayer02{
-    background-color: rgb(0, 0, 0);
-    height: 90%;
-    width: 38%;
-    margin: 0% 1%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .gridPlayer02Slot01{
     background-image: url(../img/slotFreezer.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    border-radius: 1em;
-    border: 0.3em solid rgb(138, 146, 148);
-    height: 95%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .gridPlayer02Slot02{
     background-image: url(../img/slotCell.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    border-radius: 1em;
-    border: 0.3em solid rgb(138, 146, 148);
-    height: 95%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .gridPlayer02Slot03{
     background-image: url(../img/slotMajinBuu.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    border-radius: 1em;
-    border: 0.3em solid rgb(138, 146, 148);
-    height: 95%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .gridPlayer02Slot04{
     background-image: url(../img/slotBroly.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    border-radius: 1em;
-    border: 0.3em solid rgb(138, 146, 148);
-    height: 95%;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /*Aquí comienza la fila 04*/
@@ -344,7 +225,7 @@ html, body {
     justify-content: center;
 }
 
-.statsPlayer01{
+.statsPlayer01, .statsPlayer02{
     background-color: black;
     background-repeat: no-repeat;
     background-size: contain;
@@ -373,164 +254,52 @@ html, body {
     cursor: pointer;
 }
 
-.statsPlayer02{
-    background-color: black;
-    height: 90%;
-    width: 38%;
-    margin: 0% 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------------------------------------------------------
-Clases que son llamadas por el evento que se activa con gridPlayer01Slot01
+Clases que son llamadas por la función animacionParrillaPlayer
 ------------------------------------------------------------------------------------------*/
-.imgPlayer01Slot01{
+.imgPlayer01Slot01,.imgPlayer01Slot02,.imgPlayer01Slot03,.imgPlayer01Slot04,
+.imgPlayer02Slot01,.imgPlayer02Slot02,.imgPlayer02Slot03,.imgPlayer02Slot04{
     background-image: url(../img/screen02GokuAnimation.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.statsPlayer01Slot01{
+.statsPlayer01Slot01,.statsPlayer01Slot02,.statsPlayer01Slot03,.statsPlayer01Slot04,
+.statsPlayer02Slot01,.statsPlayer02Slot02,.statsPlayer02Slot03,.statsPlayer02Slot04{
     background-color: rgb(0, 0, 0);
     font-family: "Dragon Ball";
     font-size: 3vw;
     color: white;
 }
 
-/*------------------------------------------------------------------------------------------
-Clases que son llamadas por el evento que se activa con gridPlayer01Slot02
-------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot02{
     background-image: url(../img/screen02GohanAnimation.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.statsPlayer01Slot02{
-    background-color: black;
-    font-family: "Dragon Ball";
-    font-size: 3vw;
-    color: white;
-}
-
-/*------------------------------------------------------------------------------------------
-Clases que son llamadas por el evento que se activa con gridPlayer01Slot03
-------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot03{
     background-image: url(../img/screen02VegetaAnimation.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.statsPlayer01Slot03{
-    background-color: black;
-    font-family: "Dragon Ball";
-    font-size: 3vw;
-    color: white;
-}
-
-/*------------------------------------------------------------------------------------------
-Clases que son llamadas por el evento que se activa con gridPlayer01Slot04
-------------------------------------------------------------------------------------------*/
 .imgPlayer01Slot04{
     background-image: url(../img/screen02KrillinAnimation.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.statsPlayer01Slot04{
-    background-color: black;
-    font-family: "Dragon Ball";
-    font-size: 3vw;
-    color: white;
-}
-
-/*------------------------------------------------------------------------------------------
-Clases que son llamadas por el evento que se activa con gridPlayer02Slot01
-------------------------------------------------------------------------------------------*/
 .imgPlayer02Slot01{
     background-image: url(../img/screen02FreezerAnimation.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.statsPlayer02Slot01{
-    background-color: black;
-    font-family: "Dragon Ball";
-    font-size: 3vw;
-    color: white;
-}
-
-/*------------------------------------------------------------------------------------------
-Clases que son llamadas por el evento que se activa con gridPlayer02Slot02
-------------------------------------------------------------------------------------------*/
 .imgPlayer02Slot02{
     background-image: url(../img/screen02CellAnimation.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.statsPlayer02Slot02{
-    background-color: black;
-    font-family: "Dragon Ball";
-    font-size: 3vw;
-    color: white;
-}
-
-/*------------------------------------------------------------------------------------------
-Clases que son llamadas por el evento que se activa con gridPlayer02Slot03
-------------------------------------------------------------------------------------------*/
 .imgPlayer02Slot03{
     background-image: url(../img/screen02MajinBuuAnimation.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.statsPlayer02Slot03{
-    background-color: black;
-    font-family: "Dragon Ball";
-    font-size: 3vw;
-    color: white;
-}
-
-/*------------------------------------------------------------------------------------------
-Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
-------------------------------------------------------------------------------------------*/
 .imgPlayer02Slot04{
     background-image: url(../img/screen02BrolyAnimation.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
-
-.statsPlayer02Slot04{
-    background-color: black;
-    font-family: "Dragon Ball";
-    font-size: 3vw;
-    color: white;
-}
-
-
-
-
 
 /*ESTILOS PANTALLA 03*/
 .screen03{
@@ -554,7 +323,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     align-items: center;
 }
 
-.screen03ContainerLifePlayer01{
+.screen03ContainerLifePlayer01,.screen03ContainerLifePlayer02{
     background-color: black;
     width: 40%;
     height: 40%;
@@ -565,7 +334,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     margin-left: 1em;
 }
 
-.screen03LifePlayer01{
+.screen03LifePlayer01,.screen03LifePlayer02{
     background-color: rgb(236, 16, 9);
     width: 100%;
     height: 100%;
@@ -593,29 +362,15 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
 }
 
 .screen03ContainerLifePlayer02{
-    background-color: black;
-    width: 40%;
-    height: 40%;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
     border-radius: 0em 2em 2em 0em;
     margin-right: 1em;
 }
 
 .screen03LifePlayer02{
-    background-color: rgb(236, 16, 9);
-    width: 100%;
-    height: 100%;
     border-radius: 0em 2em 2em 0em;
-    font-family: "Dragon Ball";
-    font-size: 2.5vw;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
     padding-left: 0.5em;
-    color: white;
-    transition: 2s;
 }
 
 .screen03Row02{
@@ -626,18 +381,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     align-items: center;
 }
 
-.screen03Player01Zone{
-    width: 40%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.screen03Player02Zone{
+.screen03Player01Zone,.screen03Player02Zone{
     width: 40%;
     height: 90%;
     display: flex;
@@ -656,7 +400,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     align-items: center;
 }
 
-.screen03ButtonsPlayer01{
+.screen03ButtonsPlayer01,.screen03ButtonsPlayer02{
     width: 40%;
     height: 90%;
     display: flex;
@@ -664,7 +408,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     align-items: center;
 }
 
-.attackPlayer01{
+.attackPlayer01,.attackPlayer02{
     border-radius: 50%;
     width: 5em;
     height: 5em;
@@ -689,28 +433,6 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.screen03ButtonsPlayer02{
-    width: 40%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.attackPlayer02{
-    border-radius: 50%;
-    width: 5em;
-    height: 5em;
-    background-image: url(../img/buttonAttackOn.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
-}
-
-
-
-
 /*ESTILOS PANTALLA 04*/
 .screen04{
     background-image: url(../img/backgroundScreen04.jpg);
@@ -734,18 +456,7 @@ Clases que son llamadas por el evento que se activa con gridPlayer02Slot04
     color: rgb(255, 232, 0);
 }
 
-.player01Win{
-    font-family: "Dragon Ball";
-    font-size: 5vw;
-    color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    background-color: black;
-}
-
-.player02Win{
+.player01Win,.player02Win{
     font-family: "Dragon Ball";
     font-size: 5vw;
     color: red;

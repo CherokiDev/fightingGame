@@ -18,7 +18,6 @@ class Personajes {
         document.getElementById('screen03Player02Zone').style.backgroundImage = player2seleccion.imagenDefensa;
         document.getElementById('journal').innerHTML = `El jugador ${player2seleccion.nombre} ha recibido ${diferenciaStatsBoton1} de daño.`
 
-        
         if(player2seleccion.vida <= 0){
             document.getElementById('screen03').style.display = "none";
             document.getElementById('screen04').style.display = "block";
@@ -47,7 +46,6 @@ class Personajes {
 
 }
 
-
 // Creación de personajes
 const pers1 = new Personajes("Son Goku",100,95,75, "url(img/fighting/gokuAttack01.gif)", "url(img/fighting/gokuDefense01.gif)");
 const pers2 = new Personajes("Son Gohan",100,90,70, "url(img/fighting/gohanAttack01.gif)", "url(img/fighting/gohanDefense01.gif)");
@@ -58,14 +56,9 @@ const pers6 = new Personajes("Cell",100,90,70, "url(img/fighting/cellAttack01.gi
 const pers7 = new Personajes("Majin Buu",100,85,55, "url(img/fighting/majinBuuAttack01.gif)", "url(img/fighting/majinBuuDefense01.gif)");
 const pers8 = new Personajes("Broly", 100,95,70, "url(img/fighting/brolyAttack01.gif)", "url(img/fighting/brolyDefense01.gif)");
 
-
-
 // Variables para asignar los personajes a sus respectivos players
 let player1seleccion;
 let player2seleccion;
-
-
-
 
 const activeButtomPlayer01 = document.getElementById('attackPlayer01');
 const activeButtomPlayer02 = document.getElementById('attackPlayer02');
@@ -87,14 +80,7 @@ activeButtomPlayer02.addEventListener('click', () => {
         document.getElementById('attackPlayer01').style.backgroundImage = "url('img/buttonAttackOn.png')";
     }
 })
-
-
-
-
-
-
 const selectPersonaje = (nombre, jugador) => {
-
 
     let preSeleccion;
     switch(nombre){
@@ -145,16 +131,9 @@ const selectPersonaje = (nombre, jugador) => {
             document.getElementById("namePlayer02").innerHTML = "Broly";
             document.getElementById('screen03Player02Zone').style.backgroundImage = "url(img/fighting/brolyStart01.gif)";
         break;
-
     }
 
-    /*jugador === 1 ? player1seleccion = preSeleccion : player2seleccion = preSeleccion; */
-
-    if(jugador === 1){
-        player1seleccion = preSeleccion;
-    }else{
-        player2seleccion = preSeleccion;
-    }
+    jugador === 1 ? player1seleccion = preSeleccion : player2seleccion = preSeleccion; 
 }
 
 //Guardo fightRow04 en una constante
@@ -163,6 +142,7 @@ const fight = document.getElementById('fightRow04');
 //Construyo el evento que cambia de la pantalla 02 a la pantalla 03
 fight.addEventListener('click', () => {
     if (player1seleccion && player2seleccion){
+        console.log(player1seleccion)
         document.getElementById('screen02').style.display = "none";
         document.getElementById('screen03').style.display = "block";
         document.getElementById("screen03LifePlayer01").innerHTML = `${player1seleccion.nombre}`
@@ -191,9 +171,7 @@ fight.addEventListener('click', () => {
                         "url('img/scenes/scene08.jpg')",
                         "url('img/scenes/scene09.jpg')"];
         document.getElementById("screen03").style.backgroundImage=bigSize[random];
-              
-        
-        
+    
     }else if(!player1seleccion){
         document.getElementById("namePlayer01").innerHTML = "Select Player!";
 
